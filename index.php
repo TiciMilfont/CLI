@@ -10,14 +10,19 @@
         $nome = "Agatha";
         $idade = 50;
     
-        ?>
        
         if ($idade <= 18) {
-            $menor = "é menor de idade."
-        else {
-            $maior = "é maior de idade."
-        }     
+            $resposta = "$é menor de idade.";
         }
+        else {
+            $resposta = "$é maior de idade.";
+        }     
+        ?>
 
+        <h1> Nome: <?=$Nome?> </h1>
+        <h1> Idade: <?=$Idade?> </h1>
+        <p> <?=$Nome?> "é" <?=$resposta?> </p>
+
+        
 </body>
 </html>
