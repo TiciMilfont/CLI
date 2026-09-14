@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <
+    <?php
     echo "<h1> Testando HTML </h1>";
     ?>
     
