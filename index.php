@@ -21,7 +21,7 @@
 
         <h1> Nome: <?=$nome?> </h1>
         <h1> Idade: <?=$idade?> </h1>
-        <p> <?=$nome?> "é" <?=$resposta?> </p>
+        <p> <?=$nome?> é <?=$resposta?> </p>
 
         
 </body>
