@@ -19,9 +19,9 @@
         }     
         ?>
 
-        <h1> Nome: <?=$Nome?> </h1>
-        <h1> Idade: <?=$Idade?> </h1>
-        <p> <?=$Nome?> "é" <?=$resposta?> </p>
+        <h1> Nome: <?=$nome?> </h1>
+        <h1> Idade: <?=$idade?> </h1>
+        <p> <?=$nome?> "é" <?=$resposta?> </p>
 
         
 </body>
