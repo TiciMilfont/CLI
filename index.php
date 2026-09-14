@@ -12,6 +12,8 @@
         ?>
         <h1> nome: <?=$nome?> </h1>
         <p> idade: <?=$idade?> </p>
+        if $idade <= 18;
+        echo "menor";
 
     
 </body>
