@@ -22,9 +22,9 @@
 
 <div class="container">
 
-        <h1> Nome: <?=$nome?> </h1>
-        <h1> Idade: <?=$idade?> </h1>
-        <p> <?=$nome?> é <?=$resposta?> </p>
+        <h1> Nome: <?=$nome ?></h1>
+        <h1> Idade: <?=$idade ?></h1>
+        <p> <?=$nome?> é <?=$resposta ?></p>
     </div>
         
 </body>
