@@ -13,7 +13,10 @@
         <h1> nome: <?=$nome?> </h1>
         <p> idade: <?=$idade?> </p>
         if ($idade <= 18) {
-            <?=$nome?> "é menor de idade" ; 
+            <?=$nome?> é menor de idade.
+        else {
+            <?=$nome?> é maior de idade. 
+        }     
         }
        
 
