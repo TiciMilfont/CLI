@@ -9,9 +9,10 @@
     <?php
         $nome = "Agatha";
         $idade = 50;
-        echo $nome;
+        ?>
+        <h1> nome: <?=$nome?> </h1>
+        <p> idade: <?=$idade?> </p>
 
-   
 
     ?>
     
