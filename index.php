@@ -8,6 +8,7 @@
 <body>
     <?php
         $nome = "Agatha";
+        $idade = 50;
         echo $nome;
 
    
