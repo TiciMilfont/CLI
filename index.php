@@ -13,9 +13,9 @@
         ?>
        
         if ($idade <= 18) {
-            $menor é menor de idade.
+            $menor = "é menor de idade."
         else {
-            $maior é maior de idade. 
+            $maior = "é maior de idade."
         }     
         }
 
