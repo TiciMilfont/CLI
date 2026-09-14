@@ -7,9 +7,11 @@
 </head>
 <body>
     <?php
-    echo "<h1> Testando HTML </h1>";
-    $nome = "Lucas";
-    echo $nome;
+        $nome = "Agatha";
+        echo $nome;
+
+   
+
     ?>
     
 </body>
