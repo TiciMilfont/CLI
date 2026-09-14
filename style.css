@@ -1,0 +1,26 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    margin: 100;
+}
+
+.container {
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(144, 30, 148);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    margin: 200;
+
+}
+
+hi {
+    color: rgb(12, 12, 2);
+    margin: 0;
+}
