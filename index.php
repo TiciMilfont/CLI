@@ -9,17 +9,15 @@
     <?php
         $nome = "Agatha";
         $idade = 50;
+    
         ?>
-        <h1> nome: <?=$nome?> </h1>
-        <p> idade: <?=$idade?> </p>
+       
         if ($idade <= 18) {
-            <?=$nome?> é menor de idade.
+            $menor é menor de idade.
         else {
-            <?=$nome?> é maior de idade. 
+            $maior é maior de idade. 
         }     
         }
-       
 
-    
 </body>
 </html>
