@@ -11,6 +11,7 @@ body {
     margin: 0;
     padding: 20px;
     box-sizing: border-box;
+    gap: 30px;
 }
 
 /* O cartão/container principal (onde fica o seu formulário) */
