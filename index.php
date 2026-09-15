@@ -26,6 +26,32 @@
         <h1> Idade: <?=$idade ?></h1>
         <p> <?=$nome?> é <?=$resposta ?></p>
     </div>
+
+<form>:
+
+    <form action="/enviar-dados" method="POST">
+   
+    <div>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome:" required>
+    </div>
+
+    <div>
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" placeholder="Ex: 25" required>
+    </div>
+
+    <div>
+        <label for="ano">Ano:</label>
+        <input type="number" id="ano" name="ano" min="1900" max="2026" placeholder="Ex: 2026" required>
+    </div>
+
+    =
+    <button type="submit">Enviar</button>
+
+
+</form>
+    
         
 </body>
 </html>
