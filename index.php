@@ -62,10 +62,10 @@ $nome = "nome";
   
 <?php if ($resposta != "")  { ?>
 
-    <h1> Nome: <?=$nome ?></h1>
-    <h1> Idade: <?=$idade ?></h1>
-    <h1> Ano de Nascimento: <?=$ano ?></h1>
-    <p> <?=$nome?> <?=$resposta ?></p>
+    <p> Nome: <?=$nome ?></p>
+    <p> Idade: <?=$idade ?></p>
+    <p> Ano de Nascimento: <?=$ano ?></p>
+    <h1> <?=$nome?> <?=$resposta ?></h1>
     
     <?php } ?>
 
