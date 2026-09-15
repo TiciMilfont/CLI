@@ -27,7 +27,7 @@
         <p> <?=$nome?> é <?=$resposta ?></p>
     </div>
 
-<form>:
+<form>
 
     <form action="/enviar-dados" method="POST">
    
@@ -46,7 +46,6 @@
         <input type="number" id="ano" name="ano" min="1900" max="2026" placeholder="Ex: 2026" required>
     </div>
 
-    =
     <button type="submit">Enviar</button>
 
 
