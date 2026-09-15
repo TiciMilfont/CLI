@@ -6,8 +6,7 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 20px;              /* Cria um espaçamento vertical de 20px entre o quadro e o form */
-    height: 70%;
-    margin: 500;
+   
 }
 
 .container {
@@ -19,7 +18,7 @@ body {
     align-items: center;
     flex-direction: column;
     height: 50%;
-    margin: 500;
+   
 
 }
 
