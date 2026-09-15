@@ -11,6 +11,7 @@ $nome = "nome";
 
             $nome = $_POST ["nome"];
             $idade = $_POST ["idade"];
+            $ano = $_POST ["ano"];
 
 
         if ($idade <= 18) {
