@@ -1,29 +1,77 @@
+/* Configuração geral do fundo da página */
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: aquamarine;
+    font-family: 'Courier New', Courier, monospace; /* Fonte limpa estilo máquina/código do modelo */
+    background-color: #f7b119; /* O fundo laranja vibrante do modelo */
+    color: #1a1a1a; /* Texto quase preto para contraste */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    gap: 20px;              /* Cria um espaçamento vertical de 20px entre o quadro e o form */
-   
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
+/* O cartão/container principal (onde fica o seu formulário) */
 .container {
-
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(144, 30, 148);
+    background-color: #fcfaf2; /* Cor de fundo creme/bege clara idêntica ao modelo */
+    border: 3px solid #1a1a1a; /* Borda grossa e marcada */
+    border-radius: 24px; /* Cantos bem arredondados como os do modelo */
+    padding: 30px;
+    width: 100%;
+    max-width: 450px; /* Evita que o container fique esticado demais */
+    box-sizing: border-box;
+    
+    /* Sombra sólida geométrica marcante do modelo */
+    box-shadow: 8px 8px 0px #1a1a1a; 
+    
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    height: 200%;
-    padding-top: 100px;
-   
-
+    align-items: center;
+    gap: 15px; /* Espaçamento padrão entre os elementos internos */
 }
 
-hi {
-    color: rgb(12, 12, 2);
-    margin: 100;
+/* Títulos e Textos principais */
+h1, h2, p {
+    font-family: 'Courier New', Courier, monospace;
+    color: #1a1a1a;
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+/* Estilização dos inputs e do botão para combinar com o design */
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #1a1a1a;
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input[type="submit"], button {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-family: monospace;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    width: 100%;
+}
+
+input[type="submit"]:active {
+    transform: scale(0.98); /* Efeito de clique do botão */
 }
