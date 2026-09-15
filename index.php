@@ -62,7 +62,7 @@ $nome = "nome";
 
     <h1> Nome: <?=$nome ?></h1>
     <h1> Idade: <?=$idade ?></h1>
-    <p> <?=$nome?> é <?=$resposta ?></p>
+    <p> <?=$nome?> <?=$resposta ?></p>
     
     <?php } ?>
 

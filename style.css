@@ -5,8 +5,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;          /* Força o corpo a usar 100% da altura da tela */
-    margin: 0;              /* Remove margens padrão do navegador */
     gap: 20px;              /* Cria um espaçamento vertical de 20px entre o quadro e o form */
     height: 70%;
     margin: 500;
