@@ -8,8 +8,8 @@ $nome = "nome";
 
         if ($_SERVER["REQUEST_METHOD"] == "POST") { /* == perguntando se o formulário preenchido é o POST */
 
-            $nome = $_POST ["Maria"];
-            $idade = $_POST ["20"];
+            $nome = $_POST ["nome"];
+            $idade = $_POST ["idade"];
 
 
         if ($idade <= 18) {
@@ -38,9 +38,7 @@ $nome = "nome";
 
 <div class="container">
 
-        <h1> Nome: <?=$nome ?></h1>
-        <h1> Idade: <?=$idade ?></h1>
-        <p> <?=$nome?> é <?=$resposta ?></p>
+    
     
 
 <form>
