@@ -1,3 +1,26 @@
+
+<?php
+$nome = "nome";
+        $idade = "idade";
+        $resposta = "resposta";
+
+         /*$_SERVER  variável pré-definida do PHP */
+
+        if ($_SERVER["REQUEST_METHOD"] == "POST") { /* == perguntando se o formulário preenchido é o POST */
+
+            $nome = $_POST ["nome"];
+            $idade = $_POST ["idade"];
+
+
+        if ($idade <= 18) {
+            $resposta = "$é menor de idade.";
+        }
+        else {
+            $resposta = "$é maior de idade.";
+        }   }  
+
+        ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,18 +30,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <?php
-        $nome = "Agatha";
-        $idade = 50;
-    
+  
+
        
-        if ($idade <= 18) {
-            $resposta = "$é menor de idade.";
-        }
-        else {
-            $resposta = "$é maior de idade.";
-        }     
-        ?>
+        
+       
 
 <div class="container">
 
@@ -32,18 +48,15 @@
     <form action="/enviar-dados" method="POST">
    
     <div>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" placeholder="Digite seu nome:" required>
+        <input type="text" id="nome" name="nome">
     </div>
 
     <div>
-        <label for="idade">Idade:</label>
-        <input type="number" id="idade" name="idade" placeholder="Ex: 25" required>
+        <input type="number" id="idade" name="idade">
     </div>
 
-    <div>
-        <label for="ano">Ano:</label>
-        <input type="number" id="ano" name="ano" min="1900" max="2026" placeholder="Ex: 2026" required>
+    <div>      
+        <input type="number" id="ano" name="ano">
     </div>
 
     <button type="submit">Enviar</button>
@@ -52,7 +65,11 @@
 </form>
 
 </div>
-    
+  
+<?php if ($resposta != "")  { ?>
+    <?php } ?>
+
+
         
 </body>
 </html>
