@@ -3,6 +3,7 @@
 $nome = "nome";
         $idade = "idade";
         $resposta = "resposta";
+        $ano = "ano";
 
          /*$_SERVER  variável pré-definida do PHP */
 
@@ -62,6 +63,7 @@ $nome = "nome";
 
     <h1> Nome: <?=$nome ?></h1>
     <h1> Idade: <?=$idade ?></h1>
+    <h1> Ano de Nascimento: <?=$ano ?></h1>
     <p> <?=$nome?> <?=$resposta ?></p>
     
     <?php } ?>
