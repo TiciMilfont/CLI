@@ -5,7 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 50%;
-    margin: 100;
+    margin: 200;
 }
 
 .container {
@@ -17,7 +17,7 @@ body {
     align-items: center;
     flex-direction: column;
     height: 20%;
-    margin: 200;
+    margin: 500;
 
 }
 
