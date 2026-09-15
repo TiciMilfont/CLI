@@ -13,10 +13,10 @@ $nome = "nome";
 
 
         if ($idade <= 18) {
-            $resposta = "$é menor de idade.";
+            $resposta = "é menor de idade.";
         }
         else {
-            $resposta = "$é maior de idade.";
+            $resposta = "é maior de idade.";
         }   }  
 
         ?>
@@ -31,19 +31,13 @@ $nome = "nome";
 </head>
 <body>
   
-
-       
-        
-       
-
+    
 <div class="container">
 
     
-    
 
-<form>
 
-    <form action="/enviar-dados" method="POST">
+    <form method="POST">
    
     <div>
         <input type="text" id="nome" name="nome">
