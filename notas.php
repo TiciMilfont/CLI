@@ -63,6 +63,8 @@ $nome = "nome";
 </head>
 <body>
 
+<a href="index.php" class="btn-voltar">← Voltar para o Menu</a> <!-- potão voltar -->
+
 <!-- O CONTEÚDO PRINCIPAL DEVE ENVOLVER OS DOIS BLOCOS IGUALMENTE -->
 <main class="conteudo-principal">
     

@@ -32,6 +32,8 @@ $nome = "nome";
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+<a href="index.php" class="btn-voltar">← Voltar para o Menu</a> <!-- potão voltar -->
   
     
 <div class="container">
