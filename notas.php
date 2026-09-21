@@ -59,7 +59,7 @@ $nome = "nome";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_notas.css">
 </head>
 <body>
   
@@ -67,7 +67,7 @@ $nome = "nome";
 <div class="container">
 
     
-
+<main class="conteudo-principal">
 
     <form method="POST">
    
@@ -115,6 +115,9 @@ $nome = "nome";
 </div>
   
 <?php if ($situacao != "")  { ?>
+    <div class="card-ficha">
+            <h2>FICHA DO ALUNO</h2>
+            <div class="ficha-detalhes">
 
     <p> Nome: <?=$nome ?></p>
     <p> Idade: <?=$idade ?></p>

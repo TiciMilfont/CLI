@@ -1,0 +1,55 @@
+/* Organiza o conteúdo lado a lado */
+.conteudo-principal {
+    display: flex;
+    flex-wrap: wrap; /* Faz o card quebrar para baixo em telas pequenas/celulares */
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px; /* Espaçamento de 30px entre o cadastro e a ficha */
+    padding: 20px;
+    width: 100%;
+}
+
+/* Estilo para o novo card da Ficha do Aluno */
+.card-ficha {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    border-radius: 15px;
+    box-shadow: 8px 8px 0px #000000; /* Mantém a sombra no mesmo estilo do seu formulário */
+    padding: 25px;
+    width: 320px;
+    font-family: monospace; /* Fonte estilo código semelhante ao seu print */
+}
+
+.card-ficha h2 {
+    text-align: center;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 10px;
+    margin-top: 0;
+    font-size: 1.4rem;
+}
+
+.ficha-detalhes p {
+    font-size: 1.1rem;
+    margin: 15px 0;
+}
+
+/* Cores dinâmicas para o resultado final */
+.status-aluno {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 25px;
+    padding: 10px;
+    border: 2px dashed #000000;
+}
+
+.status-aluno.aprovado {
+    background-color: #a3e635; /* Verde */
+}
+
+.status-aluno.recuperação {
+    background-color: #fde047; /* Amarelo */
+}
+
+.status-aluno.reprovado {
+    background-color: #f87171; /* Vermelho */
+}
