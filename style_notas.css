@@ -79,12 +79,14 @@ input[type="submit"]:active {
 /* Organiza o conteúdo lado a lado */
 .conteudo-principal {
     display: flex;
-    flex-wrap: wrap; /* Faz o card quebrar para baixo em telas pequenas/celulares */
-    justify-content: center;
-    align-items: flex-start;
-    gap: 30px; /* Espaçamento de 30px entre o cadastro e a ficha */
     padding: 20px;
     width: 100%;
+    flex-direction: row !important; /* Obriga a ficar lado a lado */
+    justify-content: center;       /* Centraliza o conjunto na tela */
+    align-items: flex-start;       /* Alinha os cards pelo topo */
+    gap: 40px;                     /* Cria uma distância confortável de 40px entre os dois */
+    width: 100%;
+    margin-top: 50px;              /* Afasta um pouco o topo da página */
 }
 
 /* Estilo para o novo card da Ficha do Aluno */
@@ -94,8 +96,9 @@ input[type="submit"]:active {
     border-radius: 15px;
     box-shadow: 8px 8px 0px #000000; /* Mantém a sombra no mesmo estilo do seu formulário */
     padding: 25px;
-    width: 320px;
     font-family: monospace; /* Fonte estilo código semelhante ao seu print */
+    width: 380px;                  /* Mantém uma largura próxima à do seu formulário */
+    min-height: 480px;             /* Mantém uma altura proporcional parecida */
 }
 
 .card-ficha h2 {
