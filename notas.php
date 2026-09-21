@@ -72,7 +72,7 @@ $nome = "nome";
     <form method="POST">
    
     <div>
-        <label for="NOME">NOME:</label>
+        <label for="nome">NOME:</label>
         <input type="text" id="nome" name="nome">
     </div>
 
