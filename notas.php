@@ -45,7 +45,7 @@ $nome = "nome";
         }
 
         else if ($media >= 5 && $media <= 7) {
-            $situacao = "RECUPERAÇÃO";
+            $situacao = " em RECUPERAÇÃO";
         }
         else {
             $resposta = "REPROVADO";
@@ -72,30 +72,37 @@ $nome = "nome";
     <form method="POST">
    
     <div>
+        <label for="NOME">Nome:</label>
         <input type="text" id="nome" name="nome">
     </div>
 
     <div>
+        <label for="IDADE">Nome:</label>
         <input type="number" id="idade" name="idade">
     </div>
 
-    <div>      
+    <div> 
+        <label for="NOTA 1">Nome:</label>     
         <input type="number" id="nota1" name="nota1" step="any" min="0" max="10">
     </div>
 
-    <div>      
+    <div>
+        <label for="NOTA 2">Nome:</label>      
         <input type="number" id="nota2" name="nota2" step="any" min="0" max="10">
     </div>
 
-    <div>      
+    <div> 
+        <label for="NOTA 3">Nome:</label>     
         <input type="number" id="nota3" name="nota3" step="any" min="0" max="10">
     </div>
 
-    <div>      
+    <div> 
+        <label for="NOTA 4">Nome:</label>     
         <input type="number" id="nota4" name="nota4" step="any" min="0" max="10">
     </div>
 
-    <div>      
+    <div>   
+        <label for="NOTA 5">Nome:</label>   
         <input type="number" id="nota5" name="nota5" step="any" min="0" max="10">
     </div>
 
