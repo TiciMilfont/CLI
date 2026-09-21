@@ -1,0 +1,76 @@
+/* Configuração geral do fundo da página */
+body {
+    font-family: 'Courier New', Courier, monospace; /* Mesma fonte estilo máquina */
+    background-color: #f7b119; /* O mesmo fundo laranja vibrante das outras páginas */
+    color: #1a1a1a;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    
+    /* Centraliza o painel principal na tela inteira */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* O card principal do menu */
+.menu-container {
+    background-color: #fcfaf2; /* Mesma cor creme/bege clara dos seus formulários */
+    border: 3px solid #1a1a1a; /* Borda grossa e marcada */
+    border-radius: 24px; /* Cantos arredondados padrão */
+    padding: 40px;
+    width: 100%;
+    max-width: 420px; /* Largura proporcional aos seus cartões de notas */
+    box-sizing: border-box;
+    
+    /* Sombra sólida geométrica preta */
+    box-shadow: 8px 8px 0px #1a1a1a; 
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Distância entre os botões */
+}
+
+/* Título do Menu Principal */
+.menu-container h1 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 10px 0;
+    padding-bottom: 15px;
+    border-bottom: 2px dashed #1a1a1a; /* Linha tracejada de divisão */
+}
+
+/* Estilização dos Links para virarem Botões */
+.menu-container a {
+    display: block;
+    text-align: center;
+    background-color: #1a1a1a; /* Botão preto */
+    color: #ffffff; /* Texto branco */
+    text-decoration: none; /* Remove o sublinhado padrão de link */
+    padding: 14px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 12px;
+    border: 2px solid #1a1a1a;
+    box-sizing: border-box;
+    
+    /* Pequena sombra no próprio botão para dar profundidade */
+    box-shadow: 0px 4px 0px #555555;
+    
+    /* Transição suave para o efeito de clique */
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+/* Efeito ao passar o mouse por cima do botão (Hover) */
+.menu-container a:hover {
+    background-color: #fcfaf2;
+    color: #1a1a1a; /* Inverte as cores ao passar o mouse */
+}
+
+/* Efeito de clique do botão (Active) */
+.menu-container a:active {
+    transform: translateY(4px); /* Empurra o botão para baixo fingindo o clique */
+    box-shadow: 0px 0px 0px #555555; /* Some com a sombra do botão */
+}
