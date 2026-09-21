@@ -1,15 +1,10 @@
 
-<?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
 
 
 <?php
 $nome = "nome";
         $idade = "idade";
-        $soma_da_nota = "soma_da_nota"
+        $soma_da_nota = "soma_da_nota";
         $soma_dos_pesos = "soma_dos_pesos";
         $media = "media";
         $situacao = "situacao";
@@ -49,7 +44,7 @@ $nome = "nome";
             $situacao = "APROVADO";
         }
 
-        if else ($media >= 5 && <= 7) {
+        else if ($media >= 5 && $media <= 7) {
             $situacao = "RECUPERAÇÃO";
         }
         else {
