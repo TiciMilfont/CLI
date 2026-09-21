@@ -80,23 +80,23 @@ $nome = "nome";
     </div>
 
     <div>      
-        <input type="number" id="nota1" name="nota1">
+        <input type="number" id="nota1" name="nota1" step="any" min="0" max="10">
     </div>
 
     <div>      
-        <input type="number" id="nota2" name="nota2">
+        <input type="number" id="nota2" name="nota2" step="any" min="0" max="10">
     </div>
 
     <div>      
-        <input type="number" id="nota3" name="nota3">
+        <input type="number" id="nota3" name="nota3" step="any" min="0" max="10">
     </div>
 
     <div>      
-        <input type="number" id="nota4" name="nota4">
+        <input type="number" id="nota4" name="nota4" step="any" min="0" max="10">
     </div>
 
     <div>      
-        <input type="number" id="nota5" name="nota5">
+        <input type="number" id="nota5" name="nota5" step="any" min="0" max="10">
     </div>
 
 
