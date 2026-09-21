@@ -32,7 +32,7 @@ $nome = "nome";
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
 <a href="index.php" class="btn-voltar">← Voltar para o Menu</a> <!-- potão voltar -->
   
     
@@ -44,14 +44,17 @@ $nome = "nome";
     <form method="POST">
    
     <div>
+    <label for="nome">NOME:</label>
         <input type="text" id="nome" name="nome">
     </div>
 
     <div>
+    <label for="idade">IDADE:</label>
         <input type="number" id="idade" name="idade">
     </div>
 
-    <div>      
+    <div>  
+    <label for="ano">ANO DE NASCIMENTO:</label>    
         <input type="number" id="ano" name="ano">
     </div>
 
