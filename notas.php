@@ -16,7 +16,7 @@ $nome = "nome";
         $peso3 = 1;
         $peso4 = 1;
         $peso5 = 3;
-        $resposta = "resposta";
+        
 
          /*$_SERVER  variável pré-definida do PHP */
 
@@ -34,7 +34,7 @@ $nome = "nome";
             $media = $_POST ["media"];
 
             $soma_da_nota =  ($nota1 * $peso1) + ($nota2 * $peso2) + ($nota3 * $peso3) + ($nota4 * $peso4) + ($nota5 * $peso5);
-            $soma_dos_pesos = $peso1 + $peso2 + $peso3 + $peso4 + $peso5 = 10;
+            $soma_dos_pesos = $peso1 + $peso2 + $peso3 + $peso4 + $peso5;
             $media = $soma_da_nota / $soma_dos_pesos;
 
 
@@ -110,7 +110,7 @@ $nome = "nome";
     <p> Nome: <?=$nome ?></p>
     <p> Idade: <?=$idade ?></p>
     <p> Média: <?=$media ?></p>
-    <h1> <?=$nome?> <?=$situacao ?></h1>
+    <h1> <?=$nome?> está <?=$situacao ?></h1>
     
     <?php } ?>
 
