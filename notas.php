@@ -1,5 +1,12 @@
 
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+
+
+<?php
 $nome = "nome";
         $idade = "idade";
         $soma_da_nota = "soma_da_nota"
