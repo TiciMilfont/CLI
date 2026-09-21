@@ -62,7 +62,9 @@ $nome = "nome";
     <link rel="stylesheet" href="style_notas.css">
 </head>
 <body>
-  
+
+<!-- O CONTEÚDO PRINCIPAL DEVE ENVOLVER OS DOIS BLOCOS IGUALMENTE -->
+<main class="conteudo-principal">
     
 <div class="container">
 

@@ -3,15 +3,27 @@ body {
     font-family: 'Courier New', Courier, monospace; /* Fonte limpa estilo máquina/código do modelo */
     background-color: #f7b119; /* O fundo laranja vibrante do modelo */
     color: #1a1a1a; /* Texto quase preto para contraste */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
     margin: 0;
     padding: 20px;
     box-sizing: border-box;
-    gap: 30px;
+    
+    /* Centraliza o bloco '.conteudo-principal' na tela toda */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Organiza o conteúdo lado a lado - CORRIGIDO */
+.conteudo-principal {
+    display: flex !important;
+    flex-direction: row !important; /* Obriga os elementos internos a ficarem lado a lado */
+    justify-content: center;       /* Centraliza o conjunto na tela */
+    align-items: flex-start;       /* Alinha os cards pelo topo */
+    gap: 40px;                     /* Cria uma distância confortável de 40px entre os dois */
+    width: 100%;
+    max-width: 1000px;             /* Define um limite para o conjunto não espalhar demais */
+    box-sizing: border-box;
 }
 
 /* O cartão/container principal (onde fica o seu formulário) */
@@ -20,8 +32,7 @@ body {
     border: 3px solid #1a1a1a; /* Borda grossa e marcada */
     border-radius: 24px; /* Cantos bem arredondados como os do modelo */
     padding: 30px;
-    width: 100%;
-    max-width: 450px; /* Evita que o container fique esticado demais */
+    width: 380px; /* Alinhado com o mesmo tamanho do card da ficha */
     box-sizing: border-box;
     
     /* Sombra sólida geométrica marcante do modelo */
@@ -29,8 +40,35 @@ body {
     
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 15px; /* Espaçamento padrão entre os elementos internos */
+}
+
+/* Garante que o formulário ocupe toda a largura interna do container */
+.container form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Alinhamento dos rótulos acima dos inputs */
+.container form div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+/* Estilo para o novo card da Ficha do Aluno */
+.card-ficha {
+    background-color: #fcfaf2; /* Alterado para a mesma cor creme do formulário */
+    border: 3px solid #1a1a1a;
+    border-radius: 24px;       /* Ajustado para bater com os 24px do formulário */
+    box-shadow: 8px 8px 0px #1a1a1a; /* Mantém a sombra no mesmo estilo do seu formulário */
+    padding: 30px;
+    font-family: monospace; /* Fonte estilo código semelhante ao seu print */
+    width: 380px;                  /* Mantém uma largura próxima à do seu formulário */
+    box-sizing: border-box;
 }
 
 /* Títulos e Textos principais */
@@ -38,14 +76,28 @@ h1, h2, p {
     font-family: 'Courier New', Courier, monospace;
     color: #1a1a1a;
     margin: 0;
-    text-align: center;
 }
 
-h1 {
-    font-size: 1.5rem;
+.card-ficha h2 {
+    text-align: center;
+    border-bottom: 2px solid #1a1a1a;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.ficha-detalhes p {
+    font-size: 1.1rem;
+    margin: 15px 0;
+}
+
+.ficha-detalhes h1 {
+    font-size: 1.4rem;
     font-weight: bold;
     line-height: 1.4;
-    margin-bottom: 10px;
+    margin-top: 25px;
+    text-align: center;
 }
 
 /* Estilização dos inputs e do botão para combinar com o design */
@@ -71,47 +123,11 @@ input[type="submit"], button {
     cursor: pointer;
     transition: transform 0.1s ease;
     width: 100%;
+    margin-top: 10px;
 }
 
-input[type="submit"]:active {
+input[type="submit"]:active, button:active {
     transform: scale(0.98); /* Efeito de clique do botão */
-}
-/* Organiza o conteúdo lado a lado */
-.conteudo-principal {
-    display: flex;
-    padding: 20px;
-    width: 100%;
-    flex-direction: row !important; /* Obriga a ficar lado a lado */
-    justify-content: center;       /* Centraliza o conjunto na tela */
-    align-items: flex-start;       /* Alinha os cards pelo topo */
-    gap: 40px;                     /* Cria uma distância confortável de 40px entre os dois */
-    width: 100%;
-    margin-top: 50px;              /* Afasta um pouco o topo da página */
-}
-
-/* Estilo para o novo card da Ficha do Aluno */
-.card-ficha {
-    background-color: #ffffff;
-    border: 3px solid #000000;
-    border-radius: 15px;
-    box-shadow: 8px 8px 0px #000000; /* Mantém a sombra no mesmo estilo do seu formulário */
-    padding: 25px;
-    font-family: monospace; /* Fonte estilo código semelhante ao seu print */
-    width: 380px;                  /* Mantém uma largura próxima à do seu formulário */
-    min-height: 480px;             /* Mantém uma altura proporcional parecida */
-}
-
-.card-ficha h2 {
-    text-align: center;
-    border-bottom: 2px solid #000000;
-    padding-bottom: 10px;
-    margin-top: 0;
-    font-size: 1.4rem;
-}
-
-.ficha-detalhes p {
-    font-size: 1.1rem;
-    margin: 15px 0;
 }
 
 /* Cores dinâmicas para o resultado final */
