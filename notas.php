@@ -48,7 +48,7 @@ $nome = "nome";
             $situacao = " em RECUPERAÇÃO";
         }
         else {
-            $resposta = "REPROVADO";
+            $situacao = "REPROVADO";
         }   }  
 
         ?>
