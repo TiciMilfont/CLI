@@ -41,14 +41,14 @@ $nome = "nome";
 
 
         if ($media >= 7) {
-            $situacao = "APROVADO";
+            $situacao = "APROVADO(A).";
         }
 
         else if ($media >= 5 && $media <= 7) {
-            $situacao = " em RECUPERAÇÃO";
+            $situacao = " em RECUPERAÇÃO.";
         }
         else {
-            $situacao = "REPROVADO";
+            $situacao = "REPROVADO(A).";
         }   }  
 
         ?>
@@ -72,7 +72,7 @@ $nome = "nome";
     <form method="POST">
    
     <div>
-        <label for="NOME">Nome:</label>
+        <label for="NOME">NOME:</label>
         <input type="text" id="nome" name="nome">
     </div>
 
