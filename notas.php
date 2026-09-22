@@ -147,7 +147,7 @@ $nome = "nome";
     <p> Idade: <?=$idade ?></p>
     <p> Média: <?=$media ?></p>
 
-    <div class="card-resultado-status status-aluno">
+    <div class="card-resultado-status status-aluno <?=$situacao?>">
     <h1> <?=$nome?> está <?=$situacao ?></h1>
 </div>
     <?php } ?>
