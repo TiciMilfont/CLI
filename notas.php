@@ -170,7 +170,7 @@ $nome = "nome";
                 <p> Nome: <?=$nome ?></p>
                 <p> Idade: <?=$idade ?></p>
                 <p> Média: <?=$media ?></p>
-                <p> Frequência: <?=$frequencia ?></p>
+                <p> Frequência: <?=$frequencia ?> % </p>
             </div>
         </div>
 
