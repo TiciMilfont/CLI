@@ -87,27 +87,37 @@ $nome = "nome";
 
     <div> 
         <label for="nota1">NOTA 1:</label>     
-        <input type="number" id="nota1" name="nota1" step="any" min="0" max="10">
+        <input type="number" id="nota1" name="nota1" step="any" min="0" max="10" required
+           oninvalid="this.setCustomValidity('Por favor, insira uma nota válida entre 0 e 10.')"
+           oninput="this.setCustomValidity('')">
     </div>
 
     <div>
         <label for="nota2">NOTA 2:</label>      
-        <input type="number" id="nota2" name="nota2" step="any" min="0" max="10">
+        <input type="number" id="nota2" name="nota2" step="any" min="0" max="10" required
+           oninvalid="this.setCustomValidity('Por favor, insira uma nota válida entre 0 e 10.')"
+           oninput="this.setCustomValidity('')">
     </div>
 
     <div> 
         <label for="nota3">Nota 3:</label>     
-        <input type="number" id="nota3" name="nota3" step="any" min="0" max="10">
+        <input type="number" id="nota3" name="nota3" step="any" min="0" max="10" required
+           oninvalid="this.setCustomValidity('Por favor, insira uma nota válida entre 0 e 10.')"
+           oninput="this.setCustomValidity('')">
     </div>
 
     <div> 
         <label for="nota4">NOTA 4::</label>     
-        <input type="number" id="nota4" name="nota4" step="any" min="0" max="10">
+        <input type="number" id="nota4" name="nota4" step="any" min="0" max="10" required
+           oninvalid="this.setCustomValidity('Por favor, insira uma nota válida entre 0 e 10.')"
+           oninput="this.setCustomValidity('')">
     </div>
 
     <div>   
         <label for="nota5">NOTA 5:</label>   
-        <input type="number" id="nota5" name="nota5" step="any" min="0" max="10">
+        <input type="number" id="nota5" name="nota5" step="any" min="0" max="10"required
+           oninvalid="this.setCustomValidity('Por favor, insira uma nota válida entre 0 e 10.')"
+           oninput="this.setCustomValidity('')">
     </div>
 
 
