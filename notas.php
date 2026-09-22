@@ -10,6 +10,7 @@ $nome = "nome";
 
         $classe_css = "";
         $situacao_texto = "";
+        $frequencia = "";
 
         $situacao = "situacao";
         $nota1 = "nota1";
@@ -30,6 +31,7 @@ $nome = "nome";
 
             $nome = $_POST ["nome"];
             $idade = $_POST ["idade"];
+            $frequencia = $_POST ["frequencia"];
             $nota1 = $_POST ["nota1"];
             $nota2 = $_POST ["nota2"];
             $nota3 = $_POST ["nota3"];
@@ -45,19 +47,24 @@ $nome = "nome";
 
 
 
-        if ($media == 10) {
+        if ($media == 10 && $frequencia >= 75) {
             $classe_css = "aprovado";
             $situacao_texto = "APROVADO(A) COM EXCELÊNCIA. :D";
         }
 
-        else if ($media >= 7) {
+        else if ($media >= 7 && $frequencia >= 75) {
             $classe_css = "aprovado";
             $situacao_texto = "APROVADO(A).";
         }
 
-        else if ($media >= 5 && $media <= 7) {
+        else if ($media >= 5 && $media <= 7 && $frequencia >= 75) {
             $classe_css = "recuperacao";
             $situacao_texto = "em RECUPERAÇÃO.";
+        }
+
+        else if ($media >= 7 && $frequencia < 75) {
+            $classe_css = "reprovado";
+            $situacao_texto = " REPROVADO(A) POR FREQUÊNCIA.";
         }
 
         else {
@@ -77,9 +84,9 @@ $nome = "nome";
 </head>
 <body>
 
-<a href="index.php" class="btn-voltar">← Voltar para o Menu</a> <!-- potão voltar -->
+<a href="index.php" class="btn-voltar">← Voltar para o Menu</a> <!-- botão voltar -->
 
-<!-- O CONTEÚDO PRINCIPAL DEVE ENVOLVER OS DOIS BLOCOS IGUALMENTE -->
+<!-- O CONTEÚDO PRINCIPAL  -->
 <main class="conteudo-principal">
     
 <div class="container">
@@ -98,6 +105,13 @@ $nome = "nome";
         <label for="idade">IDADE:</label>
         <input type="number" id="idade" name="idade" min="1" required
            oninvalid="this.setCustomValidity('Por favor, insira uma idade válida (maior que 0).')"
+           oninput="this.setCustomValidity('')">
+    </div>
+
+    <div> 
+        <label for="frequencia">FREQUÊNCIA:</label>     
+        <input type="number" id="frequencia" name="frequencia" step="any" min="0" max="100" required
+           oninvalid="this.setCustomValidity('Por favor, insira a porcentagem de frequência válida entre 0 e 100.')"
            oninput="this.setCustomValidity('')">
     </div>
 
