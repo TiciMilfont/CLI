@@ -60,7 +60,7 @@ body {
 }
 
 /* Estilo para o novo card da Ficha do Aluno */
-.card-ficha {
+.card-ficha, .card-resultado-status {
     background-color: #fcfaf2; /* Alterado para a mesma cor creme do formulário */
     border: 3px solid #1a1a1a;
     border-radius: 24px;       /* Ajustado para bater com os 24px do formulário */
@@ -72,13 +72,13 @@ body {
 }
 
 /* Títulos e Textos principais */
-h1, h2, p {
+h1, h2, p, .card-resultado-status {
     font-family: 'Courier New', Courier, monospace;
     color: #1a1a1a;
     margin: 0;
 }
 
-.card-ficha h2 {
+.card-ficha h2, .card-resultado-status {
     text-align: center;
     border-bottom: 2px solid #1a1a1a;
     padding-bottom: 10px;
@@ -87,12 +87,12 @@ h1, h2, p {
     font-weight: bold;
 }
 
-.ficha-detalhes p {
+.ficha-detalhes p, .card-resultado-status {
     font-size: 1.1rem;
     margin: 15px 0;
 }
 
-.ficha-detalhes h1 {
+.ficha-detalhes h1, .card-resultado-status {
     font-size: 1.4rem;
     font-weight: bold;
     line-height: 1.4;
@@ -131,7 +131,7 @@ input[type="submit"]:active, button:active {
 }
 
 /* Cores dinâmicas para o resultado final */
-.status-aluno {
+.card-resultado-status {
     text-align: center;
     font-size: 1.6rem;
     margin-top: 25px;

@@ -135,6 +135,8 @@ $nome = "nome";
 </form>
 
 </div>
+
+
   
 <?php if ($situacao != "")  { ?>
     <div class="card-ficha">
@@ -144,8 +146,10 @@ $nome = "nome";
     <p> Nome: <?=$nome ?></p>
     <p> Idade: <?=$idade ?></p>
     <p> Média: <?=$media ?></p>
+
+    <div class="card-resultado-status status-aluno">
     <h1> <?=$nome?> está <?=$situacao ?></h1>
-    
+</div>
     <?php } ?>
 
 
