@@ -82,8 +82,8 @@ $nome = "nome";
 
     <div>
         <label for="idade">IDADE:</label>
-        <input type="number" id="idade" name="idade" step="any" min="1" required
-           oninvalid="this.setCustomValidity('Por favor, insira uma idade válida.')"
+        <input type="number" id="idade" name="idade" min="1" required
+           oninvalid="this.setCustomValidity('Por favor, insira uma idade válida (maior que 0).')"
            oninput="this.setCustomValidity('')">
     </div>
 
