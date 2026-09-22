@@ -40,12 +40,13 @@ $nome = "nome";
             $media = $soma_da_nota / $soma_dos_pesos;
 
 
-        if ($media >= 7) {
-            $situacao = "APROVADO(A).";
+
+        if ($media >= 7 && $media == 10) {
+            $situacao = "APROVADO(A) COM EXECELÊNCIA.";
         }
 
-        else if ($media >= 7 && $media == 10) {
-            $situacao = "APROVADO(A) COM EXECELÊNCIA.";
+        else if ($media >= 7) {
+            $situacao = "APROVADO(A).";
         }
 
         else if ($media >= 5 && $media <= 7) {
