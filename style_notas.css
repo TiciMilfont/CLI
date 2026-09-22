@@ -180,3 +180,39 @@ input[type="submit"]:active, button:active {
     transform: translateY(4px);
     box-shadow: 0px 0px 0px #555555;
 }
+
+/* 1. Alinha o Formulário e o Painel de Resultados lado a lado */
+.container-principal { /* Mude para o nome da classe que você usou no container geral */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinha tudo pelo topo */
+    gap: 40px; /* Dá um espaçamento confortável entre o formulário e os cards */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 2. Força os cards da direita a ficarem um abaixo do outro */
+.painel-resultados {
+    display: flex;
+    flex-direction: column; /* ESSA LINHA EMPILHA OS CARDS VERTICALMENTE */
+    gap: 20px; /* Espaço entre o card da ficha e o card de status */
+    width: 350px; /* Define um tamanho fixo ideal para os cards da direita */
+}
+
+/* 3. Mantém o mesmo estilo visual de caixinha 2D nos dois cards */
+.card-ficha, .card-resultado-status {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 5px 0px black; /* Mantém a sombra preta igual ao seu formulário */
+    width: 100%; /* Faz o card ocupar todo o espaço do painel-resultados */
+    box-sizing: border-box;
+}
+
+/* 4. Ajuste fino para o card de resultado */
+.card-resultado-status {
+    text-align: center;
+    margin-top: 0; /* Zera a margem antiga para o gap do painel controlar o espaço */
+}

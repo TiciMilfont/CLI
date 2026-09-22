@@ -147,6 +147,9 @@ $nome = "nome";
 
   
 <?php if ($situacao != "")  { ?>
+
+    <div class="painel-resultados">
+
     <div class="card-ficha">
             <h2>FICHA DO ALUNO</h2>
             <div class="ficha-detalhes">
@@ -156,11 +159,14 @@ $nome = "nome";
     <p> Média: <?=$media ?></p>
 </div>
     </div>
+</div>
 
     <div class="card-resultado-status status-aluno <?=$classe_css?>">
         <h1><?=$nome?> está <?=$situacao_texto?></h1>
     </div>
     <?php } ?>
+
+
 
 
         
