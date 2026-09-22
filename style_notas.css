@@ -56,7 +56,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    width: 100%;
+    width: 500%;
 }
 
 /* Estilo para o novo card da Ficha do Aluno */
