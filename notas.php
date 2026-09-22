@@ -44,9 +44,14 @@ $nome = "nome";
             $situacao = "APROVADO(A).";
         }
 
+        else if ($media >= 7 && $media == 10) {
+            $situacao = "APROVADO(A) COM EXECELÊNCIA.";
+        }
+
         else if ($media >= 5 && $media <= 7) {
             $situacao = " em RECUPERAÇÃO.";
         }
+
         else {
             $situacao = "REPROVADO(A).";
         }   }  
