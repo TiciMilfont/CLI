@@ -147,24 +147,26 @@ $nome = "nome";
 
   
 <?php if ($situacao != "")  { ?>
-
+  
     <div class="painel-resultados">
 
-    <div class="card-ficha">
+        <div class="card-ficha">
             <h2>FICHA DO ALUNO</h2>
             <div class="ficha-detalhes">
+                <p> Nome: <?=$nome ?></p>
+                <p> Idade: <?=$idade ?></p>
+                <p> Média: <?=$media ?></p>
+            </div>
+        </div>
 
-    <p> Nome: <?=$nome ?></p>
-    <p> Idade: <?=$idade ?></p>
-    <p> Média: <?=$media ?></p>
-</div>
-    </div>
-</div>
+        <!--  RESULTADO -->
+        <div class="card-resultado-status status-aluno <?=$classe_css?>">
+            <h1><?=$nome?> está <?=$situacao_texto?></h1>
+        </div>
 
-    <div class="card-resultado-status status-aluno <?=$classe_css?>">
-        <h1><?=$nome?> está <?=$situacao_texto?></h1>
-    </div>
-    <?php } ?>
+    </div> 
+<?php } ?>
+
 
 
 

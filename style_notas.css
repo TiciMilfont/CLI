@@ -205,18 +205,17 @@ input[type="submit"]:active, button:active {
 }
 
 
-/* 1. Força os cards da direita a ficarem um abaixo do outro */
+/* Força os dois blocos da direita a se empilharem verticalmente */
 .painel-resultados {
-    display: flex;
-    flex-direction: column; /* ESSA LINHA EMPILHA OS CARDS VERTICALMENTE */
-    gap: 25px;              /* Espaço confortável entre a ficha e o status */
-    width: 380px;           /* Mantém a largura exata alinhada com o formulário */
+    display: flex !important;
+    flex-direction: column !important; /* Faz o card de status ir para baixo */
+    gap: 25px;                         /* Cria um espaçamento confortável entre eles */
+    width: 380px;                      /* Mantém a largura idêntica à do formulário */
 }
 
-/* 2. Ajuste fino para o card de resultado */
+/* Garante que o card de resultado ocupe toda a largura do painel e não estique para os lados */
 .card-resultado-status {
-    text-align: center;
-    margin-top: 0;          /* Reseta margens antigas para o gap trabalhar livremente */
-    border-bottom: none;    /* Remove a linha sólida interna para destacar a borda tracejada */
-    margin-bottom: 0;       /* Zera a margem de baixo antiga */
+    width: 100% !important;
+    box-sizing: border-box;
+    margin-top: 0 !important; /* Zera margens antigas que possam deslocar o bloco */
 }
