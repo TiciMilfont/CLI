@@ -7,6 +7,10 @@ $nome = "nome";
         $soma_da_nota = "soma_da_nota";
         $soma_dos_pesos = "soma_dos_pesos";
         $media = "media";
+
+        $classe_css = "";
+        $situacao_texto = "";
+
         $situacao = "situacao";
         $nota1 = "nota1";
         $nota2 = "nota2";
@@ -41,20 +45,24 @@ $nome = "nome";
 
 
 
-        if ($media >= 7 && $media == 10) {
-            $situacao = "APROVADO(A) COM EXECELÊNCIA. :D ";
+        if ($media == 10) {
+            $classe_css = "aprovado";
+            $situacao_texto = "APROVADO(A) COM EXCELÊNCIA. :D";
         }
 
         else if ($media >= 7) {
-            $situacao = "APROVADO(A).";
+            $classe_css = "aprovado";
+            $situacao_texto = "APROVADO(A).";
         }
 
         else if ($media >= 5 && $media <= 7) {
-            $situacao = " em RECUPERAÇÃO.";
+            $classe_css = "recuperacao";
+            $situacao_texto = "em RECUPERAÇÃO.";
         }
 
         else {
-            $situacao = "REPROVADO(A).";
+            $classe_css = "reprovado";
+            $situacao_texto = "REPROVADO(A).";
         }   }  
 
         ?>
@@ -146,8 +154,10 @@ $nome = "nome";
     <p> Nome: <?=$nome ?></p>
     <p> Idade: <?=$idade ?></p>
     <p> Média: <?=$media ?></p>
+</div>
+    </div>
 
-    <div class="card-resultado-status status-aluno <?=$situacao?>">
+    <div class="card-resultado-status status-aluno <?=strtolower($situacao)?>">
     <h1> <?=$nome?> está <?=$situacao ?></h1>
 </div>
     <?php } ?>
