@@ -42,7 +42,7 @@ $nome = "nome";
 
 
         if ($media >= 7 && $media == 10) {
-            $situacao = "APROVADO(A) COM EXECELÊNCIA.";
+            $situacao = "APROVADO(A) COM EXECELÊNCIA. :D ";
         }
 
         else if ($media >= 7) {
