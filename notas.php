@@ -157,9 +157,9 @@ $nome = "nome";
 </div>
     </div>
 
-    <div class="card-resultado-status status-aluno <?=strtolower($situacao)?>">
-    <h1> <?=$nome?> está <?=$situacao ?></h1>
-</div>
+    <div class="card-resultado-status status-aluno <?=$classe_css?>">
+        <h1><?=$nome?> está <?=$situacao_texto?></h1>
+    </div>
     <?php } ?>
 
 
