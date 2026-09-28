@@ -9,7 +9,7 @@ $login = "login";
             $senha = $_POST ["senha"];
            
 
-        if ($login == adm && $senha == 1234) {
+        if ($login == 'adm' && $senha == '1234') {
             $situacao_texto = " Logado com Sucesso!";
         }
 
@@ -49,9 +49,7 @@ $login = "login";
 
     <div>
         <label for="senha">SENHA:</label>
-        <input type="password" id="login" name="senha" required
-           oninvalid="this.setCustomValidity('Por favor, insira uma idade válida (maior que 0).')"
-           oninput="this.setCustomValidity('')">
+        <input type="password" id="senha" name="senha" required>
     </div>
 
 
@@ -59,9 +57,11 @@ $login = "login";
 
     </form>
 
-    <div class="acesso" <?=$classe_css?>">
-            <h1><?=$login?> : <?=$situacao_texto?></h1>
-        </div>
+    <?php if (!empty($situacao_texto)): ?>
+            <div class="acesso <?=$classe_css?>">
+                <h1><?=$situacao_texto?></h1>
+            </div> 
+        
 
 
 </div>
