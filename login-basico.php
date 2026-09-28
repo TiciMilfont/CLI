@@ -10,12 +10,10 @@ $login = "login";
            
 
         if ($login == adm && $senha == 1234) {
-            $classe_css = "sucesso";
-            $situacao_texto = "Sucesso!";
+            $situacao_texto = " Logado com Sucesso!";
         }
 
         else {
-            $classe_css = "erro";
             $situacao_texto = "Usuário ou senha inválidos!";
         }   }  
 
@@ -51,7 +49,7 @@ $login = "login";
 
     <div>
         <label for="senha">SENHA:</label>
-        <input type="number" id="login" name="senha" required
+        <input type="password" id="login" name="senha" required
            oninvalid="this.setCustomValidity('Por favor, insira uma idade válida (maior que 0).')"
            oninput="this.setCustomValidity('')">
     </div>
@@ -60,6 +58,11 @@ $login = "login";
     <button type="submit">ENTRAR</button>
 
     </form>
+
+    <div class="acesso" <?=$classe_css?>">
+            <h1><?=$login?> : <?=$situacao_texto?></h1>
+        </div>
+
 
 </div>
 

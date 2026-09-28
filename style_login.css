@@ -105,3 +105,10 @@ input[type="submit"]:active, button:active {
     transform: translateY(4px);
     box-shadow: 0px 0px 0px #555555;
 }
+
+.acesso {
+    display: flex !important;
+    flex-direction: column !important; /* Faz o card de status ir para baixo */
+    gap: 25px;                         /* Cria um espaçamento confortável entre eles */
+    width: 380px;                      /* Mantém a largura idêntica à do formulário */
+}
