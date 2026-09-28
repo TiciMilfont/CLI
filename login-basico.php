@@ -11,6 +11,10 @@ $login = "login";
 
         if ($login == 'adm' && $senha == '1234') {
             $situacao_texto = " Logado com Sucesso!";
+            $_SESSION['usuario'] = $login; // Salva o nome do usuário para usar depois
+        
+
+            header("Location: pagina.login.php");
         }
 
         else {
@@ -33,12 +37,10 @@ $login = "login";
 
 
 <!-- O CONTEÚDO PRINCIPAL  -->
+    
 <main class="conteudo-principal">
     
 <div class="container">
-
-    
-<main class="conteudo-principal">
 
     <form method="POST">
    
@@ -66,6 +68,6 @@ $login = "login";
 
 </div>
 
-        
+</main>      
 </body>
 </html>
