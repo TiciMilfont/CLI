@@ -68,9 +68,8 @@ $classe_css = "";
             </div> 
         
 
-
 </div>
-<?php endif; ?>
+<?php endif; ?>  <!-- endif; sempre que você abre um if utilizando a sintaxe alternativa com dois pontos (if (...):).  -->
 
 </main>      
 </body>
