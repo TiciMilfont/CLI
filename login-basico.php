@@ -1,6 +1,9 @@
 <?php
+session_start(); /* == para login*/
 $login = "login";
         $senha = "senha";
+        $situacao_texto = "";
+$classe_css = "";
        
 
         if ($_SERVER["REQUEST_METHOD"] == "POST") { /* == perguntando se o formulário preenchido é o POST */
@@ -67,6 +70,7 @@ $login = "login";
 
 
 </div>
+<?php endif; ?>
 
 </main>      
 </body>
