@@ -37,6 +37,11 @@
         <input type="number" id="nota" name="nota">
     </div>
 
+    <div>
+        <label for="ano">ANO DO JOGO:</label>
+        <input type="date" id="ano" name="ano">
+    </div>
+
     
     <button type="submit">CADASTRAR</button>
 
@@ -60,10 +65,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = $_POST['nome'];
     $genero = $_POST['genero'];
     $nota = $_POST['nota'];
+    $ano = $_POST['ano'];
 
     try {
       
-        $sql = "INSERT INTO jogos (nome, genero, nota) VALUES ('$nome', '$genero', '$nota')";
+        $sql = "INSERT INTO jogos (nome, genero, nota, ano) VALUES ('$nome', '$genero', '$nota', '$ano')";
         $pdo->exec($sql);
       
         echo "Cadastrado com sucesso!";
