@@ -70,6 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
       
         $sql = "INSERT INTO jogos (nome, genero, nota, ano) VALUES ('$nome', '$genero', '$nota', '$ano')";
+        $sql = "ALTER TABLE jogos ADD COLUMN ano DATE";
         $pdo->exec($sql);
       
         echo "Cadastrado com sucesso!";

@@ -48,7 +48,7 @@ $sql = " CREATE TABLE IF NOT EXISTS  jogos (
     genero VARCHAR (10),
     nota INT 
     ano DATE
-    )"; // primeira tabela criada no projeto
+    )"; // segunda tabela criada no projeto
     
     $pdo->exec($sql);
 
