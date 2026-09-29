@@ -19,7 +19,7 @@
 <a href="notas.php"> Cadastro Aluno e Notas </a>
 <a href="desafio.notas.php"> Desafio POST -> GET </a>
 <a href="login-basico.php"> LOGIN </a>
-<a href="jogos.html"> LISTA DE JOGOS </a>
+<a href="jogos.php"> LISTA DE JOGOS </a>
 
 
         
