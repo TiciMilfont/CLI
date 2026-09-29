@@ -5,7 +5,7 @@
 $host = "localhost";
 $banco ="ticiana315";
 $usuario = "ticiana315";
-$senha = "297vim";
+$senha = "315!@#";
 
 // pdo = ferramenta do proprio PHP raiz para conversar com o BD
 // PDO = php data objets
