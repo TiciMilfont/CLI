@@ -1,41 +1,4 @@
-<?php
 
-       
-        // 1. IMPORTA A CONEXÃO: Traz a variável $pdo para esta página
-require "conexao.php";
-
-// 2. VERIFICA SE O FORMULÁRIO FOI ENVIADO
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    
-    // Pega os dados que o usuário digitou 
-    $nome = $_POST['nome'];
-    $genero = $_POST['genero'];
-    $nota = $_POST['nota'];
-
-    try {
-        // Prepara o comando SQL de forma segura usando "SQL Preparation" (evita invasões)
-        $stmt = $pdo->prepare("INSERT INTO teste (nome, genero, nota) VALUES (:nome, :genero, :nota)");
-        
-        // Executa o comando trocando as etiquetas (:nome e :idade) pelos valores reais , "$stmt =" para salvar a preparação
-        $stmt->execute([
-            'nome' -> $nome,
-            'genero' -> $genero,
-            'nota' ->$nota
-
-        ]);
-
-      
-        echo "Cadastrado com sucesso!";
-
-    } catch (PDOException $erro) {  // tipo de erro que queremos capturar
-
-        echo "Erro ao cadastrar:" .$erro-> getMessage();
-        
-        } 
-}
-            
-
-        ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -86,3 +49,34 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 </body>
 </html>
+
+<?php
+
+       
+        //  IMPORTA A CONEXÃO: Traz a variável $pdo para esta página
+require "conexao.php";
+
+//  VERIFICA SE O FORMULÁRIO FOI ENVIADO
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    
+    // Pega os dados que o usuário digitou 
+    $nome = $_POST['nome'];
+    $genero = $_POST['genero'];
+    $nota = $_POST['nota'];
+
+    try {
+      
+        $sql = "INSERT INTO jogos (nome, genero, nota) VALUES ('$nome', '$genero', '$nota')";
+        $pdo->exec($sql);
+      
+        echo "Cadastrado com sucesso!";
+
+    } catch (PDOException $erro) {  
+
+        echo "Erro ao cadastrar:" .$erro-> getMessage();
+        
+        } 
+}
+            
+
+        ?>
