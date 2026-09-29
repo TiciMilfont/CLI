@@ -71,7 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <div></div>
         <label for="nota">NOTA DO JOGO:</label>
-        <input type="text" id="nota" name="nota">
+        <input type="number" id="nota" name="nota">
     </div>
 
     
