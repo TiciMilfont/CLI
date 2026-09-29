@@ -27,12 +27,12 @@
         <input type="text" id="nome" name="nome">
     </div>
 
-    <div></div>
+    <div>
         <label for="genero">GENERO DO JOGO:</label>
         <input type="text" id="genero" name="genero">
     </div>
 
-    <div></div>
+    <div>
         <label for="nota">NOTA DO JOGO:</label>
         <input type="number" id="nota" name="nota">
     </div>
