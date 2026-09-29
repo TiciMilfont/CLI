@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Jogos</title>
-    <link rel="stylesheet" href="style_notas.css">
+    <link rel="stylesheet" href="style_jogos.css">
 </head>
 <body>
 
@@ -52,14 +52,11 @@
 
 <?php
 
-       
-        //  IMPORTA A CONEXÃO: Traz a variável $pdo para esta página
+             
 require "conexao.php";
 
-//  VERIFICA SE O FORMULÁRIO FOI ENVIADO
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
-    // Pega os dados que o usuário digitou 
     $nome = $_POST['nome'];
     $genero = $_POST['genero'];
     $nota = $_POST['nota'];
