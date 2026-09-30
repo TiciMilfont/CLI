@@ -5,7 +5,7 @@ require "conexao.php";
 
 $sql = " CREATE TABLE IF NOT EXISTS  jogos (
     id  INT AUTO_INCREMENT PRIMARY KEY,
-    senha (5),
+    senha INT (5),
     nome VARCHAR(100),
     genero VARCHAR (10),
     nota INT ,
@@ -78,6 +78,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <main class="conteudo-principal">
 
     <form method="POST">
+
+    <div>
+        <label for="senha">SENHA:</label>
+        <input type="password" id="senha" name="senha">
+    </div>
    
     <div>
         <label for="nome">NOME DO JOGO:</label>
