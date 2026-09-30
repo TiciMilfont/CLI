@@ -25,6 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
      
 
+    if ($_POST['senha'] === '999') {
 
 
     
@@ -34,6 +35,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
   
     echo "Cadastrado com sucesso!";
+
+} else {
+    echo "Senha incorreta!";
+}
 }
 
 
