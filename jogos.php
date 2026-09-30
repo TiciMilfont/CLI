@@ -56,7 +56,7 @@
 
     </tr>
 
-<?php foreach ($jogo as $jogo) { ?>  <!-- para cada item nessa lista, faça algo com a variavel-->
+<?php foreach ($jogos as $jogo) { ?>  <!-- para cada item nessa lista, faça algo com a variavel-->
 <tr>
 <th> ID </th>
         <th><?= $jogo ["id"] ?></th>
