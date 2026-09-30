@@ -52,4 +52,12 @@ $sql = " CREATE TABLE IF NOT EXISTS  jogos (
     
     $pdo->exec($sql);
 
+    $buscar = " SELECT * FROM jogos"; // buscar todos os jogos registrados no banco de dados
+
+    $stmt = $pdo-> query($buscar); // steitemen, instrução, comando a ser executado , função query= recebe retorno do select || exec= executa algo quando vc n quer retorno
+
+    $jogos= $stmt-> fetchAll(PDO :: FETCH_ASSOC); // para retorno de dados no json
+
+
+
 ?>

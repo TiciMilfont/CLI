@@ -45,6 +45,35 @@
     
     <button type="submit">CADASTRAR</button>
 
+    <h2> JOGOS CADASTRADOS </h2>
+
+    <table><tr>
+        <th> ID </th>
+        <th> NOME </th>
+        <th> GENERO </th>
+        <th> NOTA </th>
+        <th> ANO </th>
+
+    </tr>
+
+<?php foreach ($jogo as $jogo) { ?>  <!-- para cada item nessa lista, faça algo com a variavel-->
+<tr>
+<th> ID </th>
+        <th><?= $jogo ["id"] ?></th>
+        <th><?= $jogo ["nome"] ?></th>
+        <th><?= $jogo ["genero"] ?></th>
+        <th><?= $jogo ["nota"] ?></th>
+        <th><?= $jogo ["ano"] ?></th>
+        
+
+
+
+</tr>
+
+    <?php } ?>
+
+
+</table>
 
 </form>
 
