@@ -20,7 +20,7 @@ try {
 
     ) ;
 
- echo "Sucesso!";
+ echo "CONECTADO AO SERVIDOR!";
 
      } catch (PDOException $erro) {  // tipo de erro que queremos capturar
 
