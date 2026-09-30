@@ -12,7 +12,7 @@ $sql = " CREATE TABLE IF NOT EXISTS  jogos (
     )"; // segunda tabela criada no projeto
     
     $pdo->exec($sql);
-echo "debug 1";
+
 
 $sql = "ALTER TABLE jogos ADD COLUMN ano DATE";
 
@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO jogos (nome, genero, nota, ano) VALUES ('$nome', '$genero', '$nota', '$ano')";
        
     $pdo->exec($sql);
-    echo "debug 2";
+    
   
     echo "Cadastrado com sucesso!";
 }
@@ -37,11 +37,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $stmt=$pdo->query($buscar); // steitemen, instrução, comando a ser executado , função query= recebe retorno do select || exec= executa algo quando vc n quer retorno
 
-        echo "debug 3";
+        
         $jogos=$stmt->fetchAll(PDO::FETCH_ASSOC); // para retorno de dados no json
 
-            
-        echo "debug 4";
+        
         ?>
 
 <!DOCTYPE html>
