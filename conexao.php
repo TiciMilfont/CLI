@@ -20,7 +20,7 @@ try {
 
     ) ;
 
- echo "CONECTADO AO SERVIDOR!";
+ echo "CONECTADO AO SERVIDOR!"; // MSG EM TODAS AS PÁGINAS
 
      } catch (PDOException $erro) {  // tipo de erro que queremos capturar
 
