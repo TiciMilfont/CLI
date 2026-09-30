@@ -75,8 +75,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
 <div class="container">
 
-    
-<main class="conteudo-principal">
 
     <form method="POST">
 

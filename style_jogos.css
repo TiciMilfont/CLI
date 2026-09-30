@@ -1,106 +1,29 @@
-body {
-    font-family: 'Courier New', Courier, monospace; /* Fonte limpa estilo máquina/código do modelo */
-    background-color: #f7b119; /* O fundo laranja vibrante do modelo */
-    color: #1a1a1a; /* Texto quase preto para contraste */
-    min-height: 100vh;
-    margin: 0;
-    padding: 20px;
-    box-sizing: border-box;
-    
-    /* Centraliza o bloco '.conteudo-principal' na tela toda */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Organiza o conteúdo lado a lado - CORRIGIDO */
+/* Organiza o conteúdo centralizado */
 .conteudo-principal {
     display: flex !important;
-    flex-direction: row !important; /* Obriga os elementos internos a ficarem lado a lado */
-    justify-content: center;       /* Centraliza o conjunto na tela */
-    align-items: flex-start;       /* Alinha os cards pelo topo */
-    gap: 40px;                     /* Cria uma distância confortável de 40px entre os dois */
+    flex-direction: row !important; 
+    justify-content: center;       
+    align-items: flex-start;       
+    gap: 40px;                     
     width: 100%;
-    max-width: 1000px;             /* Define um limite para o conjunto não espalhar demais */
+    /* REMOVIDO o max-width daqui para permitir que o card interno cresça livremente */
     box-sizing: border-box;
 }
 
 .container {
-    background-color: #fcfaf2; /* Cor de fundo creme/bege clara idêntica ao modelo */
-    border: 3px solid #1a1a1a; /* Borda grossa e marcada */
-    border-radius: 24px; /* Cantos bem arredondados como os do modelo */
+    background-color: #fcfaf2; 
+    border: 3px solid #1a1a1a; 
+    border-radius: 24px; 
     padding: 30px;
- 
-    max-width: 800px;        /* Define um limite máximo confortável para a tabela */
     box-sizing: border-box;
 
-        
-    /* MODIFIQUE AQUI: Aumente este valor para o card ficar maior */
-    width: 950px; 
+    /* DEFINA O TAMANHO DESEJADO AQUI (Ex: 850px fica ótimo para tabelas) */
+    width: 850px; 
     
-    /* Sombra sólida geométrica marcante do modelo */
+    /* REMOVIDO o max-width: 800px que estava travando o card */
+    
     box-shadow: 8px 8px 0px #1a1a1a; 
-    
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Espaçamento padrão entre os elementos internos */
-}
-
-.container table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-}
-
-/* Garante que o formulário ocupe toda a largura interna do container */
-.container form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-/* Alinhamento dos rótulos acima dos inputs */
-.container form div {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    width: 100%;
-}
-
-input[type="submit"], button {
-    background-color: #1a1a1a;
-    color: #ffffff;
-    border: none;
-    padding: 12px 24px;
-    font-family: monospace;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: transform 0.1s ease;
-    width: 100%;
-    margin-top: 10px;
-}
-
-input[type="submit"]:active, button:active {
-    transform: scale(0.98); /* Efeito de clique do botão */
-}
-
-/* Estilização do Botão Voltar */
-.btn-voltar {
-    display: inline-block;
-    text-decoration: none; /* Remove o sublinhado de link */
-    background-color: #1a1a1a; /* Fundo preto */
-    color: #ffffff; /* Texto branco */
-    padding: 10px 20px;
-    font-family: monospace;
-    font-weight: bold;
-    font-size: 0.9rem;
-    border: 2px solid #1a1a1a;
-    border-radius: 8px;
-    box-shadow: 0px 4px 0px #555555;
-    margin-bottom: 20px; /* Dá um espaço em relação aos cards abaixo */
-    cursor: pointer;
-    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    gap: 15px; 
 }
