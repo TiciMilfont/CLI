@@ -63,11 +63,11 @@
 <?php foreach ($jogos as $jogo) { ?>  <!-- para cada item nessa lista, faça algo com a variavel-->
 <tr>
 
-        <td><?= $jogo["id"] ?></td>
-        <td><?= $jogo["nome"] ?></td>
-        <td><?= $jogo["genero"] ?></td>
-        <td><?= $jogo["nota"] ?></td>
-        <td><?= $jogo["ano"] ?></td>
+        <td><?=$jogo["id"] ?></td>
+        <td><?=$jogo["nome"] ?></td>
+        <td><?=$jogo["genero"] ?></td>
+        <td><?=$jogo["nota"] ?></td>
+        <td><?=$jogo["ano"] ?></td>
         
 
 
@@ -118,11 +118,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 
-        $buscar = " SELECT * FROM jogos"; // buscar todos os jogos registrados no banco de dados
+        $buscar=" SELECT * FROM jogos"; // buscar todos os jogos registrados no banco de dados
 
-        $stmt = $pdo-> query($buscar); // steitemen, instrução, comando a ser executado , função query= recebe retorno do select || exec= executa algo quando vc n quer retorno
+        $stmt=$pdo->query($buscar); // steitemen, instrução, comando a ser executado , função query= recebe retorno do select || exec= executa algo quando vc n quer retorno
 
-        $jogos= $stmt-> fetchAll(PDO :: FETCH_ASSOC); // para retorno de dados no json
+        $jogos=$stmt->fetchAll(PDO::FETCH_ASSOC); // para retorno de dados no json
 
             
 
