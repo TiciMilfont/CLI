@@ -9,14 +9,13 @@ $sql = " CREATE TABLE IF NOT EXISTS  jogos (
     genero VARCHAR (10),
     nota INT ,
     ano DATE,
-    senha INT (5)
     )"; // segunda tabela criada no projeto
     
     $pdo->exec($sql);
 
 
 $sql = "ALTER TABLE jogos ADD COLUMN ano DATE";
-$sql = "ALTER TABLE jogos ADD COLUMN senha PASSWORD";
+
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
@@ -25,16 +24,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $genero = $_POST['genero'];
     $nota = $_POST['nota'];
     $ano = $_POST['ano'];
-    $ano = $_POST['senha'];
+    $senha = $_POST['senha'];
     
 
      
 
-    if ($_POST['senha'] === '999') {
+    if ( $senha === '999') {
 
 
     
-    $sql = "INSERT INTO jogos (nome, genero, nota, ano, senha) VALUES ('$nome', '$genero', '$nota', '$ano', '$senha')";
+    $sql = "INSERT INTO jogos (nome, genero, nota, ano) VALUES ('$nome', '$genero', '$nota', '$ano')";
        
     $pdo->exec($sql);
     
