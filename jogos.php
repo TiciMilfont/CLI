@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
      
 
-    if ( $senha == '999') {
+    if ( $senha == '999') { // cadastro de senha para poder cadastrar os jogos
 
 
     
