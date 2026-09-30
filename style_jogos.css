@@ -30,7 +30,8 @@ body {
     border: 3px solid #1a1a1a; /* Borda grossa e marcada */
     border-radius: 24px; /* Cantos bem arredondados como os do modelo */
     padding: 30px;
-    width: 980px; /* Alinhado com o mesmo tamanho do card da ficha */
+    width: 100%;             /* Ocupa o espaço necessário */
+    max-width: 800px;        /* Define um limite máximo confortável para a tabela */
     box-sizing: border-box;
     
     /* Sombra sólida geométrica marcante do modelo */
