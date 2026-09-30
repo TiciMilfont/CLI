@@ -45,7 +45,7 @@
     
     <button type="submit">CADASTRAR</button>
   
-
+    </form>
  
 
     <h2> JOGOS CADASTRADOS </h2>
@@ -79,7 +79,7 @@
 
 </table>
 
-</form>
+
 
 </div>
 
