@@ -63,11 +63,11 @@
 <?php foreach ($jogos as $jogo) { ?>  <!-- para cada item nessa lista, faça algo com a variavel-->
 <tr>
 
-        <td><?= $jogo ["id"] ?></td>
-        <td><?= $jogo ["nome"] ?></td>
-        <td><?= $jogo ["genero"] ?></td>
-        <td><?= $jogo ["nota"] ?></td>
-        <td><?= $jogo ["ano"] ?></td>
+        <td><?= $jogo["id"] ?></td>
+        <td><?= $jogo["nome"] ?></td>
+        <td><?= $jogo["genero"] ?></td>
+        <td><?= $jogo["nota"] ?></td>
+        <td><?= $jogo["ano"] ?></td>
         
 
 
