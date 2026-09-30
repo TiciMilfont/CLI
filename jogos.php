@@ -8,7 +8,7 @@ $sql = " CREATE TABLE IF NOT EXISTS  jogos (
     nome VARCHAR(100),
     genero VARCHAR (10),
     nota INT ,
-    ano DATE,
+    ano DATE
     )"; // segunda tabela criada no projeto
     
     $pdo->exec($sql);
@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
      
 
-    if ( $senha === '999') {
+    if ( $senha == '999') {
 
 
     
