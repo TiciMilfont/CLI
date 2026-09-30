@@ -5,25 +5,27 @@ require "conexao.php";
 
 $sql = " CREATE TABLE IF NOT EXISTS  jogos (
     id  INT AUTO_INCREMENT PRIMARY KEY,
-    senha INT (5),
     nome VARCHAR(100),
     genero VARCHAR (10),
     nota INT ,
-    ano DATE
+    ano DATE,
+    senha INT (5)
     )"; // segunda tabela criada no projeto
     
     $pdo->exec($sql);
 
 
 $sql = "ALTER TABLE jogos ADD COLUMN ano DATE";
+$sql = "ALTER TABLE jogos ADD COLUMN senha PASSWORD";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
-    $ano = $_POST['senha'];
+   
     $nome = $_POST['nome'];
     $genero = $_POST['genero'];
     $nota = $_POST['nota'];
     $ano = $_POST['ano'];
+    $ano = $_POST['senha'];
     
 
      
@@ -32,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     
-    $sql = "INSERT INTO jogos (nome, genero, nota, ano) VALUES ('$nome', '$genero', '$nota', '$ano')";
+    $sql = "INSERT INTO jogos (nome, genero, nota, ano, senha) VALUES ('$nome', '$genero', '$nota', '$ano', '$senha')";
        
     $pdo->exec($sql);
     
@@ -79,10 +81,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <form method="POST">
 
-    <div>
-        <label for="senha">SENHA:</label>
-        <input type="password" id="senha" name="senha">
-    </div>
+  
    
     <div>
         <label for="nome">NOME DO JOGO:</label>
@@ -102,6 +101,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div>
         <label for="ano">ANO DO JOGO:</label>
         <input type="date" id="ano" name="ano">
+    </div>
+
+    <div>
+        <label for="senha">SENHA:</label>
+        <input type="password" id="senha" name="senha">
     </div>
 
     
