@@ -14,19 +14,33 @@ $sql = " CREATE TABLE IF NOT EXISTS  jogos (
     $pdo->exec($sql);
 
 
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // 1. Defina aqui qual é a senha correta para permitir o cadastro
+        $senha_correta = "filmes"; 
+
+
 $sql = "ALTER TABLE jogos ADD COLUMN ano DATE";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    echo "debug 1";
+    $senha_correta = "999"; // Defina sua senha aqui
+
     $nome = $_POST['nome'];
     $genero = $_POST['genero'];
     $nota = $_POST['nota'];
-    $ano = $_POST['ano'];
+    $ano = $_POST['ano']; 
 
-      
+    if ($senha_digitada === $senha_correta) {
+        $sql = "INSERT INTO jogos (nome, genero, nota, ano) VALUES ('$nome', '$genero', '$nota', '$ano')";
+        $pdo->exec($sql);
+        echo "Cadastrado com sucesso!";
+
+
+
     $sql = "INSERT INTO jogos (nome, genero, nota, ano) VALUES ('$nome', '$genero', '$nota', '$ano')";
        
     $pdo->exec($sql);
+
+    
     
   
     echo "Cadastrado com sucesso!";
