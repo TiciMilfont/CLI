@@ -1,4 +1,4 @@
-
+<?php foreach ($jogos as $jogo) { ?>  <!-- para cada item nessa lista, faça algo com a variavel-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -60,7 +60,7 @@
 
     </tr>
 
-<?php foreach ($jogos as $jogo) { ?>  <!-- para cada item nessa lista, faça algo com a variavel-->
+
 <tr>
 
         <td><?=$jogo["id"] ?></td>
@@ -88,42 +88,3 @@
 </body>
 </html>
 
-<?php
-
-             
-require "conexao.php";
-
-$sql = "ALTER TABLE jogos ADD COLUMN ano DATE";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    
-    $nome = $_POST['nome'];
-    $genero = $_POST['genero'];
-    $nota = $_POST['nota'];
-    $ano = $_POST['ano'];
-
-    try {
-      
-        $sql = "INSERT INTO jogos (nome, genero, nota, ano) VALUES ('$nome', '$genero', '$nota', '$ano')";
-       
-        $pdo->exec($sql);
-      
-        echo "Cadastrado com sucesso!";
-
-    } catch (PDOException $erro) {  
-
-        echo "Erro ao cadastrar:" .$erro-> getMessage();
-        
-        } 
-}
-
-
-        $buscar=" SELECT * FROM jogos"; // buscar todos os jogos registrados no banco de dados
-
-        $stmt=$pdo->query($buscar); // steitemen, instrução, comando a ser executado , função query= recebe retorno do select || exec= executa algo quando vc n quer retorno
-
-        $jogos=$stmt->fetchAll(PDO::FETCH_ASSOC); // para retorno de dados no json
-
-            
-
-        ?>
