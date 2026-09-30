@@ -42,6 +42,12 @@ body {
     gap: 15px; /* Espaçamento padrão entre os elementos internos */
 }
 
+.container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
 /* Garante que o formulário ocupe toda a largura interna do container */
 .container form {
     width: 100%;
