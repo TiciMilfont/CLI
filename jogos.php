@@ -17,11 +17,13 @@ $sql = " CREATE TABLE IF NOT EXISTS  jogos (
 $sql = "ALTER TABLE jogos ADD COLUMN ano DATE";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    echo "debug 1";
+    
+    $ano = $_POST['senha'];
     $nome = $_POST['nome'];
     $genero = $_POST['genero'];
     $nota = $_POST['nota'];
     $ano = $_POST['ano'];
+    
 
      
 
@@ -37,8 +39,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "Cadastrado com sucesso!";
 
 } else {
+
     echo "Senha incorreta!";
 }
+
 }
 
 
