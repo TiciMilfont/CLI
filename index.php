@@ -42,15 +42,7 @@ $pdo->exec($sql);
 
 echo "<br>Tabela criada com sucesso!";
 
-$sql = " CREATE TABLE IF NOT EXISTS  jogos (
-    id  INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(100),
-    genero VARCHAR (10),
-    nota INT ,
-    ano DATE
-    )"; // segunda tabela criada no projeto
-    
-    $pdo->exec($sql);
+
 
     
 
