@@ -5,6 +5,7 @@ require "conexao.php";
 
 $sql = " CREATE TABLE IF NOT EXISTS  jogos (
     id  INT AUTO_INCREMENT PRIMARY KEY,
+    senha (5),
     nome VARCHAR(100),
     genero VARCHAR (10),
     nota INT ,
