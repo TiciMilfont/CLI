@@ -44,15 +44,21 @@
 
     
     <button type="submit">CADASTRAR</button>
+    </div>
+
+</main>
+
+    </form>
 
     <h2> JOGOS CADASTRADOS </h2>
 
-    <table><tr>
-        <th> ID </th>
-        <th> NOME </th>
-        <th> GENERO </th>
-        <th> NOTA </th>
-        <th> ANO </th>
+    <table>
+        <tr>
+            <th> ID </th>
+            <th> NOME </th>
+            <th> GENERO </th>
+            <th> NOTA </th>
+            <th> ANO </th>
 
     </tr>
 
@@ -75,11 +81,9 @@
 
 </table>
 
-</form>
 
-</div>
 
-</main>
+
 
 </body>
 </html>
