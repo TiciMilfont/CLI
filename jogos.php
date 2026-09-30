@@ -1,34 +1,4 @@
 
-<h2> JOGOS CADASTRADOS </h2>
-
-<table>
-    <tr>
-        <th> ID </th>
-        <th> NOME </th>
-        <th> GENERO </th>
-        <th> NOTA </th>
-        <th> ANO </th>
-
-</tr>
-
-<?php foreach ($jogos as $jogo) { ?>  <!-- para cada item nessa lista, faça algo com a variavel-->
-<tr>
-
-    <td><?=$jogo["id"] ?></td>
-    <td><?=$jogo["nome"] ?></td>
-    <td><?=$jogo["genero"] ?></td>
-    <td><?=$jogo["nota"] ?></td>
-    <td><?=$jogo["ano"] ?></td>
-    
-
-
-
-</tr>
-
-<?php } ?>
-
-
-</table>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -75,8 +45,37 @@
     
     <button type="submit">CADASTRAR</button>
   
-   <!-- cola h2 aqui-->
- 
+
+    <h2> JOGOS CADASTRADOS </h2>
+
+<table>
+    <tr>
+        <th> ID </th>
+        <th> NOME </th>
+        <th> GENERO </th>
+        <th> NOTA </th>
+        <th> ANO </th>
+
+</tr>
+
+<?php foreach ($jogos as $jogo) { ?>  <!-- para cada item nessa lista, faça algo com a variavel-->
+<tr>
+
+    <td><?=$jogo["id"] ?></td>
+    <td><?=$jogo["nome"] ?></td>
+    <td><?=$jogo["genero"] ?></td>
+    <td><?=$jogo["nota"] ?></td>
+    <td><?=$jogo["ano"] ?></td>
+    
+
+
+
+</tr>
+
+<?php } ?>
+
+
+</table>
 
    
 </form>
