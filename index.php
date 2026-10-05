@@ -16,7 +16,7 @@
     <h1>MENU DE PROJETOS</h1>
 
 <a href="../projetos/idade.php"> Verificador de idade </a>
-<a href=../projetos/notas.php"> Cadastro Aluno e Notas </a>
+<a href="../projetos/notas.php"> Cadastro Aluno e Notas </a>
 <a href="../projetos/desafio.notas.php"> Desafio POST -> GET </a>
 <a href="../projetos/login-basico.php"> LOGIN </a>
 <a href="../projetos/jogos.php"> LISTA DE JOGOS </a>

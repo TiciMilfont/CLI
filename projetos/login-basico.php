@@ -36,7 +36,7 @@ $classe_css = "";
 </head>
 <body>
 
-<a href="index.php" class="btn-voltar">← Voltar para o Menu</a> <!-- botão voltar -->
+<a href="../index.php" class="btn-voltar">← Voltar para o Menu</a> <!-- botão voltar -->
 
 
 <!-- O CONTEÚDO PRINCIPAL  -->

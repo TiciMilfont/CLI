@@ -33,7 +33,7 @@ $nome = "nome";
 </head>
 <body>
 
-<a href="index.php" class="btn-voltar">← Voltar para o Menu</a> <!-- potão voltar -->
+<a href="../index.php" class="btn-voltar">← Voltar para o Menu</a> <!-- potão voltar -->
   
     
 <div class="container">
