@@ -1,7 +1,7 @@
 <?php
 
              
-require "conexao.php";
+require __DIR__ . "/../conexao.php";
 
 $sql = " CREATE TABLE IF NOT EXISTS  jogos (
     id  INT AUTO_INCREMENT PRIMARY KEY,
@@ -64,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Jogos</title>
-    <link rel="stylesheet" href="style_jogos.css">
+    <link rel="stylesheet" href="css/style_jogos.css">
 </head>
 <body>
 
