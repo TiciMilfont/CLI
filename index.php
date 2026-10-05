@@ -23,12 +23,11 @@ ob_start();
      ============================================== -->
 <section id="inicio" class="inicio">
     <div class="inicio-conteudo">
-        <p class="saudacao">Olá! Eu sou a Ticiana</p> 
+        <p class="saudacao">Olá! Eu sou a Ticiana</p> <
         <h1>Ticiana Milfont</h1>
         <h2>Desenvolvedor em formação</h2>
         <p>
-            Designer e mestre em História da Arte., 
-            
+            Designer e Mestre em História da Arte.
         </p>
     </div>
 </section>
