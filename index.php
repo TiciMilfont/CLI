@@ -271,6 +271,25 @@
                     </div>
                     <a href="projetos/jogos.php" class="link-projeto">Ver atividade →</a>
                 </div>
+                 <!-- PROJETO 5 -->
+                <div class="projeto-card">
+                    <div class="projeto-numero">
+                        05
+                    </div>
+                    <h3>Desafio para a Atividades Notas</h3>
+                    <p>
+                        Sistema de gestão acadêmica em PHP nativo e HTML5 que processa e
+                        valida o desempenho de estudantes via formulário POST. A aplicação calcula médias
+                        ponderadas complexas cruzando notas e frequência, aplicando uma lógica de negócio
+                        backend para determinar o status escolar e renderizar o resultado de forma condicional
+                        e reativa na interface.
+                    </p>
+                    <div class="tecnologias">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>PHP</span>
+                    </div>
+                    <a href="projetos/desafio.notas.php" class="link-projeto">Ver atividade →</a>
             </div>
         </section>
          <!-- ==========================  
