@@ -43,11 +43,11 @@
 
                 <h1>Ticana Milfont</h1>
 
-                <h2>Desenvolvedor em formação</h2>
+                <h2>Desenvolvedora em formação</h2>
 
                 <p>
                     Estudante de Desenvolvimento de Sistemas,
-                    Formado Design e Mestre em História da Arte.
+                    Formada em Design e Mestre em História da Arte.
                 </p>
 
                 <a href="#projetos-curso" class="botao">
