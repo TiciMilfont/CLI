@@ -295,7 +295,7 @@
             <!-- PROJETO 6 -->
             <div class="projeto-card">
                     <div class="projeto-numero">
-                        05
+                        06
                     </div>
                     <h3>CHAMADO DE TI</h3>
                     <p>
@@ -308,6 +308,7 @@
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>PHP</span>
+                        <span>JSON</span>
                     </div>
                     <a href="projetos.chamados.ti/helpdesk.php" class="link-projeto">Ver atividade →</a>
             </div>
