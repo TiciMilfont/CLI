@@ -50,8 +50,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $chave_prioridade = $_POST['prioridade'] ?? '';
  
     // Traduz as chaves para os nomes que o usuário lê
-    $setor_selecionado = $setores[$chave_setor];
-    $equipamento_selecionado = $equipamentos[$chave_equipamento];
+    $setor_selecionado = $setor[$chave_setor];
+    $equipamento_selecionado = $equipamento[$chave_equipamento];
     $prioridade_selecionada = $prioridades[$chave_prioridade];
 
  $situacao = "enviado"; 
@@ -171,7 +171,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <div class="card-resultado-status status-aluno">
-            <h1><?=$nome_funcionario?> seu chamado está <?=$status?></h1>
+            <h1><?=$nome_funcionario?> , seu chamado está <?=$status?> ! </h1>
         </div>
     </div> 
 <?php } ?>
