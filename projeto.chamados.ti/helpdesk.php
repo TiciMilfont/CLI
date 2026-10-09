@@ -56,7 +56,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Traduz as chaves para os nomes que o usuário lê
     $setor_selecionado = $setor[$chave_setor];
     $equipamento_selecionado = $equipamento[$chave_equipamento];
-    $prioridade_selecionada = $prioridades[$chave_prioridade];
+    $prioridade_selecionada = $prioridade[$chave_prioridade] ;
+
+     // 🚀 SALVA DE FATO NO ARQUIVO JSON:
+     cadastrarChamado($nome_funcionario, $setor_selecionado, $equipamento_selecionado, $descricao_problema, $prioridade_selecionada);
+
 
  $situacao = "enviado"; 
     } else {
@@ -81,7 +85,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <!-- O CONTEÚDO PRINCIPAL  -->
 <main class="conteudo-principal">
     
-<div class="container">
+
 
     
 <main class="conteudo-principal">
