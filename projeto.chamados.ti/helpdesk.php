@@ -36,6 +36,8 @@ $nome_funcionario = "";
 $descricao_problema = ""; 
 $situacao = ""; 
 $status = "Aberto"; 
+$setor_selecionado = "";       // <-- Nova variável para aparece somente a seleção no resumo
+$equipamento_selecionado = "";
 
 //  processando o formulário (POST)
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -161,8 +163,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="ficha-detalhes">
                 <p> Nome: <?=$nome_funcionario ?></p>
                 <!-- Exibe os valores selecionados traduzidos na tela -->
-                <p> Setor: <?=$setor ?></p>
-                <p> Equipamento: <?=$equipamento ?></p>
+                <p> Setor: <?=$setor_selecionado ?></p>
+                <p> Equipamento: <?=$equipamento_selecionado ?></p>
                 <p> Descrição: <?=$descricao_problema ?> </p>
                 <p> Status: <?=$status ?></p>
             </div>
