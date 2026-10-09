@@ -31,6 +31,36 @@ $prioridade = [
     "alta" => "Alta"
 ];
 
+// 2. Inicialização das variáveis para evitar erros ao carregar a página
+$nome_funcionario = "";
+$setor_selecionado = "";
+$equipamento_selecionado = "";
+$descricao_problema = "";
+$prioridade_selecionada = "";
+$situacao = ""; // Controla se o painel de resultados aparece
+$status = "Aberto"; // Status padrão do chamado
+
+//  processando o formulário (POST)
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    
+    // Captura e limpa os dados enviados pelo formulário
+    $nome_funcionario = htmlspecialchars($_POST['nome_funcionario'] ?? '');
+    $chave_setor = $_POST['setor'] ?? '';
+    $chave_equipamento = $_POST['equipamento'] ?? '';
+    $descricao_problema = htmlspecialchars($_POST['descricao_problema'] ?? '');
+    $chave_prioridade = $_POST['prioridade'] ?? '';
+ 
+    // Traduz as chaves para os nomes que o usuário lê
+    $setor_selecionado = $setores[$chave_setor];
+    $equipamento_selecionado = $equipamentos[$chave_equipamento];
+    $prioridade_selecionada = $prioridades[$chave_prioridade];
+
+ $situacao = "enviado"; 
+    } else {
+        $situacao = "erro";
+    }
+
+?>
         ?>
 
 <!DOCTYPE html>
