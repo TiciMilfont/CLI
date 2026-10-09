@@ -291,6 +291,26 @@
                     </div>
                     <a href="projetos/desafio.notas.php" class="link-projeto">Ver atividade →</a>
             </div>
+
+            <!-- PROJETO 6 -->
+            <div class="projeto-card">
+                    <div class="projeto-numero">
+                        05
+                    </div>
+                    <h3>CHAMADO DE TI</h3>
+                    <p>
+
+                    Sistema básico de gerenciamento de chamados técnicos, semelhante aos utilizados por empresas e 
+                    indústrias para registrar problemas relacionados à tecnologia da informação.
+                    .
+                    </p>
+                    <div class="tecnologias">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>PHP</span>
+                    </div>
+                    <a href="projetos.chamados.ti/helpdesk.php" class="link-projeto">Ver atividade →</a>
+            </div>
         </section>
          <!-- ==========================  
             CONTATO
