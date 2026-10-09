@@ -94,7 +94,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div>
         <label for="setor">Selecione o Setor Destinado:</label>
         <select id="setor" name="setor" required>
-        <option>value="">-- Escolha uma opção --</option>
+        <option> Escolha uma opção --</option>
                 
                 <!-- 3. Gerando as opções dinamicamente com PHP -->
                 <?php foreach ($setor as $chave => $valor): ?>
@@ -110,7 +110,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div>
         <label for="equipamento">Selecione o Equipamento com defeito::</label>
         <select id="equipamento" name="equipamento" required>
-        <option>value="">-- Escolha uma opção --</option>
+        <option> Escolha uma opção --</option>
                 
                 <!-- 3. Gerando as opções dinamicamente com PHP -->
                 <?php foreach ($equipamento as $chave => $valor): ?>
@@ -133,7 +133,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
      <div>
         <label for="prioridade">Selecione a urgência do problema:</label>
         <select id="prioridade" name="prioridade" required>
-        <option>value="">-- Escolha uma opção --</option>
+        <option>Escolha uma opção --</option>
                 
                 <!-- 3. Gerando as opções dinamicamente com PHP -->
                 <?php foreach ($prioridade as $chave => $valor): ?>
@@ -161,8 +161,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="ficha-detalhes">
                 <p> Nome: <?=$nome_funcionario ?></p>
                 <!-- Exibe os valores selecionados traduzidos na tela -->
-                <p> Setor: <?=$setor_selecionado ?></p>
-                <p> Equipamento: <?=$equipamento_selecionado ?></p>
+                <p> Setor: <?=$setor ?></p>
+                <p> Equipamento: <?=$equipamento ?></p>
                 <p> Descrição: <?=$descricao_problema ?> </p>
                 <p> Status: <?=$status ?></p>
             </div>
