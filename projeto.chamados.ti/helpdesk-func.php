@@ -15,7 +15,7 @@ function cadastrarChamado($nome, $setor, $equipamento, $descricao_problema, $pri
         "nome" => $nome,
         "setor" => $setor,
         "equipamento" => $equipamento,
-        "descricao" => $descricao,
+        "descricao" => $descricao_problema,
         "prioridade" => $prioridade,
         "status" => "Aberto"
     ];
@@ -33,9 +33,9 @@ function consultarChamados() {
         return []; // Retorna uma lista vazia se o arquivo ainda não existir
     }
     
-    $conteudo de texto = file_get_contents(ARQUIVO_DADOS);
+    $conteudo_texto = file_get_contents(ARQUIVO_DADOS);
     // Transforma o texto JSON de volta em um Array do PHP
-    return json_decode($conteudo de texto, true) ?? [];
+    return json_decode($conteudo_texto, true) ?? [];
 }
 
 // 3. FUNÇÃO: ATUALIZAR STATUS
@@ -62,7 +62,7 @@ function excluirChamado($idChamado) {
         return $chamado['id'] != $idChamado;
     });
 
-    // Reorganiza o array
+    // Reorganiza  array
     $chamadosFiltrados = array_values($chamadosFiltrados);
 
     file_put_contents(ARQUIVO_DADOS, json_encode($chamadosFiltrados, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
