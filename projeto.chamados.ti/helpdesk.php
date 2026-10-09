@@ -33,12 +33,9 @@ $prioridade = [
 
 // 2. Inicialização das variáveis para evitar erros ao carregar a página
 $nome_funcionario = "";
-$setor_selecionado = "";
-$equipamento_selecionado = "";
-$descricao_problema = "";
-$prioridade_selecionada = "";
-$situacao = ""; // Controla se o painel de resultados aparece
-$status = "Aberto"; // Status padrão do chamado
+$descricao_problema = ""; 
+$situacao = ""; 
+$status = "Aberto"; 
 
 //  processando o formulário (POST)
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -61,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
 ?>
-        ?>
+    
 
 <!DOCTYPE html>
 <html lang="en">
@@ -152,43 +149,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <button type="submit">Enviar Chamado</button>
 
-    </div>
-
-
-
 </form>
+    </div>
+</main>
 
-</div>
-
-
-  
-<?php if ($situacao != "")  { ?>
-  
+<!-- PAINEL DE RESULTADOS -->
+<?php if ($situacao != "") { ?>
     <div class="painel-resultados">
-
         <div class="card-ficha">
             <h2>RESUMO DO CHAMADO</h2>
             <div class="ficha-detalhes">
                 <p> Nome: <?=$nome_funcionario ?></p>
-                <p> Setor: <?=$setor ?></p>
-                <p> Equipamento: <?=$equipamento ?></p>
+                <!-- Exibe os valores selecionados traduzidos na tela -->
+                <p> Setor: <?=$setor_selecionado ?></p>
+                <p> Equipamento: <?=$equipamento_selecionado ?></p>
                 <p> Descrição: <?=$descricao_problema ?> </p>
                 <p> Status: <?=$status ?></p>
             </div>
         </div>
 
-        <!--  RESULTADO -->
-        <div class="card-resultado-status status-aluno <?=$classe_css?>">
-            <h1><?=$nome_funcionario?> seu chamado está <?=$situacao_chamado?></h1>
+        <div class="card-resultado-status status-aluno">
+            <h1><?=$nome_funcionario?> seu chamado está <?=$status?></h1>
         </div>
-
     </div> 
 <?php } ?>
-
-
-
-
-
         
 </body>
 </html>
