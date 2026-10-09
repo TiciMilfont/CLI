@@ -1,9 +1,11 @@
 
 <!-- CREATE  -->
 
-include_once 'helpdesk-func.php';
+
 
 <?php
+
+include_once 'helpdesk-func.php';
 
 $nome_funcionario = "Nome Funcionário";
 $nome_funcionario = "Aberto";
