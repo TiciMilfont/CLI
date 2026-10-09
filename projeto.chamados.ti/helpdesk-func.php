@@ -2,7 +2,7 @@
 
 <?php
 // Define o arquivo de texto onde os chamados serão salvos em formato JSON
-define('ARQUIVO_DADOS', 'chamados.json');
+define('ARQUIVO_DADOS', 'projeto.chamdos.ti/chamados.json');
 
 // FUNÇÃO: CADASTRAR 
 function cadastrarChamado($nome, $setor, $equipamento, $descricao_problema, $prioridade) {
