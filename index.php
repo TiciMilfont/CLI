@@ -310,7 +310,7 @@
                         <span>PHP</span>
                         <span>JSON</span>
                     </div>
-                    <a href="projetos.chamados.ti/helpdesk.php" class="link-projeto">Ver atividade →</a>
+                    <a href="projeto.chamados.ti/helpdesk.php" class="link-projeto">Ver atividade →</a>
             </div>
         </section>
          <!-- ==========================  
