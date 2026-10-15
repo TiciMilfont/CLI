@@ -119,7 +119,8 @@
         <!-- ==========================  
             PROJETOS - CURSO
         ========================== -->
-        <section id="projetos-curso" class="secao">
+      
+  <section id="projetos-curso" class="secao">
             <h2 class="titulo-secao">Meus projetos</h2>
             <p class="subtitulo-secao">
                 Alguns projetos desenvolvidos durante o curso.
@@ -130,39 +131,21 @@
                     <div class="projeto-numero">
                         01
                     </div>
-                    <h3>Banco de Dados estilo anos 60 (C e Pyhton)</h3>
+                    <h3>Estufa IOT (C e Pyhton)</h3>
                     <p>
-                        Sistema híbrido que recria o conceito de gerenciamento de dados de baixo nível
-                        inspirado nos primórdios da computação. O projeto une a alta performance e o
-                        controle de memória da Linguagem C com uma interface gráfica integrada em Python (Tkinter),
-                        simulando a identidade visual clássica dos sistemas legados.
+                        Sistema de estufa com controle de condições climáticas através de sensores.
                     </p>
                     <div class="tecnologias">
                         <span>Python</span>
                         <span>Linguagem C</span>
                     </div>
-                    <a href="https://github.com/leopdasilva/Banco-de-Dados-anos-60" class="link-projeto">Ver projeto →</a>
+                    <a href="https://github.com/TiciMilfont/Estufa---IOT---MQTT" class="link-projeto">Ver projeto →</a>
                 </div>
+                
                 <!-- PROJETO 2 -->
                 <div class="projeto-card">
                     <div class="projeto-numero">
                         02
-                    </div>
-                    <h3>Cluster em Banco de Dados - Mongo DB Compass</h3>
-                    <p>
-                        Cluster local de banco de dados NoSQL projetado para simular alta disponibilidade e resiliência em sistemas distribuídos.
-                        O projeto utiliza o MongoDB 8.0 estruturado em Replica Set (nós Principal, Reserva e Árbitro), validando o mecanismo de failover
-                        automatizado em tempo real por meio de uma aplicação cliente em Python que intercepta quedas de hardware com zero perda de dados.
-                    </p>
-                    <div class="tecnologias">
-                        <span>Mongo DB Compass versão 8.0</span>
-                    </div>
-                    <a href="https://github.com/leopdasilva/projeto_cluster" class="link-projeto">Ver projeto →</a>
-                </div>
-                <!-- PROJETO 3 -->
-                <div class="projeto-card">
-                    <div class="projeto-numero">
-                        03
                     </div>
                     <h3>Sensor de velocidade</h3>
                     <p>
@@ -176,7 +159,7 @@
                         <span>Front-End (HTML, CSS, JavaScript)</span>
                         <span>Back-end: Node.js, Express, REST API (JSON / HTTP)</span>
                     </div>
-                    <a href="https://github.com/leopdasilva/Sensor_Velocidade#sistema-inteligente-de-velocidade" class="link-projeto">Ver projeto →</a>
+                    <a href="https://github.com/TiciMilfont/Moto-do-Xand-o" class="link-projeto">Ver projeto →</a>
                 </div>
             </div>
         </section>
@@ -319,7 +302,7 @@
         <section id="contato" class="secao secao-destaque">
             <h2 class="titulo-secao">Contato</h2>
             <p class="subtitulo-secao">
-                Quer entrar em contato comigo?
+                Contato:
             </p>
             <div class="contato-container">
                 <div class="contato-item">
@@ -328,12 +311,12 @@
                 </div>
                 <div class="contato-item">
                     <h3>GitHub</h3>
-                    <a href="https://github.com/ticimilfont"><github class="com">
+                    <a href="https://github.com/TiciMilfont"><github class="com">
                     <ticimilfont></ticimilfont></a>
                 </div>
                 <div class="contato-item">
                     <h3>LinkedIn</h3>
-                    <a href="https://www.linkedin.com/in/leonardo-pereira-da-silva-b911a6174/">linkedin.com/in/leonardo-pereira-da-silva</a>
+                    <a href=" ">linkedin.com/in/ticianamilfont</a>
                 </div>
             </div>
         </section>
