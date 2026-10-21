@@ -62,7 +62,7 @@
         <section id="sobre" class="secao">
             <div class="sobre_conteudo">
                 <div class="foto">
-                    
+                <img src="../resources/images/louca.jpg" alt="Foto de uma representação de Ticiana para a carta Louco do tarot">  
                 </div>
                 <div class="sobre-texto">
                     <h3>Quem sou eu?</h3>
