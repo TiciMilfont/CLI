@@ -166,7 +166,7 @@
         <!-- ==========================  
             PROJETOS - PHP
         ========================== -->
-        <section id="projetos-php" class="secao">
+        <section id="projetos-curso" class="secao">
             <h2 class="titulo-secao">Minhas atividades</h2>
             <p class="subtitulo-secao">
                 Algumas atividades desenvolvidas durante as aulas de PHP.
