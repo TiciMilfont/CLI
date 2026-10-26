@@ -191,7 +191,7 @@
                         <span>CSS</span>
                         <span>PHP</span>
                     </div>
-                    <a href="projetos/idade.php" class="link-projeto" >Ver atividade →</a>
+                    <a href="/index.php?rota=projetos/idade.php" class="link-projeto" >Ver atividade →</a>
                 </div>
                 <!-- PROJETO 2 -->
                 <div class="projeto-card">
@@ -211,7 +211,7 @@
                         <span>CSS</span>
                         <span>PHP</span>
                     </div>
-                    <a href="projetos/notas.php" class="link-projeto">Ver atividade →</a>
+                    <a href="/index.php?rota=projetos/notas.php" class="link-projeto">Ver atividade →</a>
                 </div>
                 <!-- PROJETO 3 -->
                 <div class="projeto-card">
@@ -232,7 +232,7 @@
                         <span>PHP</span>
                         <span>JavaScript</span>
                     </div>
-                    <a href="projetos/login-basico.php" class="link-projeto">Ver atividade →</a>
+                    <a href="/index.php?rota=projetos/login-basico.php" class="link-projeto">Ver atividade →</a>
                 </div>
                 <!-- PROJETO 4 -->
                 <div class="projeto-card">
@@ -252,7 +252,7 @@
                         <span>CSS</span>
                         <span>PHP</span>
                     </div>
-                    <a href="projetos/jogos.php" class="link-projeto">Ver atividade →</a>
+                    <a href="/index.php?rota=projetos/jogos.php" class="link-projeto">Ver atividade →</a>
                 </div>
                  <!-- PROJETO 5 -->
                 <div class="projeto-card">
@@ -272,7 +272,7 @@
                         <span>CSS</span>
                         <span>PHP</span>
                     </div>
-                    <a href="projetos/desafio.notas.php" class="link-projeto">Ver atividade →</a>
+                    <a href="/index.php?rota=projetos/desafio.notas.php" class="link-projeto">Ver atividade →</a>
             </div>
 
             <!-- PROJETO 6 -->
@@ -293,7 +293,7 @@
                         <span>PHP</span>
                         <span>JSON</span>
                     </div>
-                    <a href="projeto.chamados.ti/helpdesk.php" class="link-projeto">Ver atividade →</a>
+                    <a href="/index.php?rota=projeto.chamados.ti/helpdesk.php" class="link-projeto">Ver atividade →</a>
             </div>
         </section>
          <!-- ==========================  
