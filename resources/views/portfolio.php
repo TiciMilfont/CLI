@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio Milfont</title>
-    <link rel="stylesheet" href="../resources/css/css/style.index.css">
+    <link rel="stylesheet" href="/resources/css/css/style.index.css">
 </head>
 <body>
     <header>
@@ -62,7 +62,7 @@
         <section id="sobre" class="secao">
             <div class="sobre_conteudo">
                 <div class="foto">
-                <img src="../resources/images/louca.png" alt="Foto de uma representação de Ticiana para a carta Louco do tarot">  
+                <img src="/resources/images/louca.png" alt="Foto de uma representação de Ticiana para a carta Louco do tarot">  
                 </div>
                 <div class="sobre-texto">
                     <h3>Quem sou eu?</h3>
@@ -191,7 +191,7 @@
                         <span>CSS</span>
                         <span>PHP</span>
                     </div>
-                    <a href="/index.php?rota=projetos/idade.php" class="link-projeto" >Ver atividade →</a>
+                    <a href="/index.php?rota=idade" class="link-projeto" >Ver atividade →</a>
                 </div>
                 <!-- PROJETO 2 -->
                 <div class="projeto-card">
@@ -211,7 +211,7 @@
                         <span>CSS</span>
                         <span>PHP</span>
                     </div>
-                    <a href="/index.php?rota=projetos/notas.php" class="link-projeto">Ver atividade →</a>
+                    <a href="/index.php?rota=notas" class="link-projeto">Ver atividade →</a>
                 </div>
                 <!-- PROJETO 3 -->
                 <div class="projeto-card">
@@ -232,7 +232,7 @@
                         <span>PHP</span>
                         <span>JavaScript</span>
                     </div>
-                    <a href="/index.php?rota=projetos/login-basico.php" class="link-projeto">Ver atividade →</a>
+                    <a href="/index.php?rota=login_basico" class="link-projeto">Ver atividade →</a>
                 </div>
                 <!-- PROJETO 4 -->
                 <div class="projeto-card">
@@ -252,7 +252,7 @@
                         <span>CSS</span>
                         <span>PHP</span>
                     </div>
-                    <a href="/index.php?rota=projetos/jogos.php" class="link-projeto">Ver atividade →</a>
+                    <a href="/index.php?rota=jogos" class="link-projeto">Ver atividade →</a>
                 </div>
                  <!-- PROJETO 5 -->
                 <div class="projeto-card">
@@ -272,7 +272,7 @@
                         <span>CSS</span>
                         <span>PHP</span>
                     </div>
-                    <a href="/index.php?rota=projetos/desafio.notas.php" class="link-projeto">Ver atividade →</a>
+                    <a href="/index.php?rota=desafio_notas" class="link-projeto">Ver atividade →</a>
             </div>
 
             <!-- PROJETO 6 -->
