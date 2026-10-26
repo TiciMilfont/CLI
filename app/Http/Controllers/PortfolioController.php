@@ -12,7 +12,7 @@ class PortfolioController
         require __DIR__ . "/../../../resources/views/projetos/jogos.php";
     }
     public function login_basico() {
-        require __DIR__ . "/../../../resources/views/projetos/login-basico.php";
+        require __DIR__ . "/../../../resources/views/projetos/login_basico.php";
     }
     public function notas() {
         require __DIR__ . "/../../../resources/views/projetos/notas.php";
