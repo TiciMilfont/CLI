@@ -293,7 +293,7 @@
                         <span>PHP</span>
                         <span>JSON</span>
                     </div>
-                    <a href="/index.php?rota=projeto.chamados.ti/helpdesk.php" class="link-projeto">Ver atividade →</a>
+                    <a href="/index.php?rota=git projeto.chamados.ti/helpdesk.php" class="link-projeto">Ver atividade →</a>
             </div>
         </section>
          <!-- ==========================  
