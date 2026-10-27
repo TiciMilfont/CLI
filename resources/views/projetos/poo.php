@@ -62,39 +62,37 @@ public function setVida($vida) { //essa é uma aplicação do encapsulamento: co
  
 }
 
-$lucas = new Personagem("Lucas", 100, 10);
-$lucas -> setVida(50); // add 50 de vida para lucas pelo método setVida().
-$ana = new Personagem("Ana", 50, 5);
-$chloe = new Personagem("Chloe", 30, 3);
-
-//ENCAPSULAMENTO
-//Proteger informações para que não sejam alteradas de qualquer jeito.
-//HERANÇA
-//Criar uma classe nova aproveitando características de outra.
-//POLIMORFISMO
-//Permitir que objetos diferentes respondam à mesma ação de maneiras diferentes.
-//ABSTRAÇÃO
-//Mostrar o que é necessário e esconder detalhes complicados de funcionamento.
-
 
 $lucas->atacar(); // método próprio
 
 class Guerreiro extends Personagem {  // metodo herdado da classe personagem
+
+
+     // Sobrepondo o método da classe pai
+     public function atacar() {
+        echo "$this->nome atacou com uma espada de São Jorge!\n";
+    }
+
     public function defender() {
-        echo "$this->nome levantou o escudo!";
+        echo "$this->nome levantou o escudo de Ogum!";
     }
 }
 
 class mago extends Personagem {
-    public function lancarMagia () {
+    public function atacar () {
+        //subscrevendo o metodo da calsse pai
         echo "$this->nome lançou uma bola de fogo!O calor tá de matar! \n";
     }
 }
 
 $guerreiro = new Guerreiro("Lucas", 100, 10);
+$lucas -> setVida(50); // add 50 de vida para lucas pelo método setVida().
+$mago = new Mago("Aurora", 80, 20);
+$personagem = new Personagem("Lira", 50, 5);
 
 $guerreiro->atacar();   // método herdado
 $guerreiro->defender(); // método próprio
+
 
 //1. O que é uma classe?
 //Um molde para criar objetos
@@ -107,6 +105,16 @@ $guerreiro->defender(); // método próprio
 
 //4. O que significa extends?
 //Herdar características e métodos de outra classe
+
+
+//ENCAPSULAMENTO
+//Proteger informações para que não sejam alteradas de qualquer jeito.
+//HERANÇA
+//Criar uma classe nova aproveitando características de outra.
+//POLIMORFISMO
+//Permitir que objetos diferentes respondam à mesma ação de maneiras diferentes.
+//ABSTRAÇÃO
+//Mostrar o que é necessário e esconder detalhes complicados de funcionamento.
 
 
 
