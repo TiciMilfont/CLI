@@ -93,6 +93,14 @@ $personagem = new Personagem("Lira", 50, 5);
 $guerreiro->atacar();   // método herdado
 $guerreiro->defender(); // método próprio
 
+$personagens = [$guerreiro, $mago, $personagem]; // todos atacam
+
+foreach ($personagens as $p) {
+    $p->atacar(); // todos atacam
+
+}
+
+https://look.devlook.xyz/resources/views/projetos/poo.php
 
 //1. O que é uma classe?
 //Um molde para criar objetos
