@@ -1,8 +1,8 @@
 <?php
 // programação orientada objeto
 
-
 /*
+
 // exemplo SEM POO
 $nome = "Lucas";
 $vida = 100;
@@ -13,10 +13,12 @@ function atacar($nome)
 }
 
 atacar($nome);
+*/
 
 
- exemplo COM POO
-class Personagem {
+/*
+ //exemplo COM POO
+class Personagem() {
  public $nome;
  public $vida = 100;
 
@@ -30,8 +32,8 @@ class Personagem {
 $personagem1 = new Personagem();
 $personagem1->nome = "Lucas";
 $personagem1->atacar();
-*/
 
+*/
 
 
 
@@ -64,17 +66,21 @@ abstract class Personagem
             echo "a vida não pode ser negativa. /";
             return;
         }
-
-        abstract public function atacar(); 
     }
 
-   public function atacar()
-    {
+       // abstract public function atacar(); 
+         
+
+        public function atacar() {
+    
         echo "$this->nome realizou um ataque!";
     }
 }
+        
 
-$lucas->atacar(); // método próprio
+
+
+//$lucas->atacar(); // método próprio
 
 class Guerreiro extends Personagem
 {  // metodo herdado da classe personagem
