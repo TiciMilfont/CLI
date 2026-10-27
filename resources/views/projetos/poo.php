@@ -73,7 +73,7 @@ abstract class Personagem
 
         public function atacar() {
     
-        echo "$this->nome realizou um ataque!";
+        echo "$this->nome realizou um ataque! \n";
     }
 }
         
@@ -94,7 +94,7 @@ class Guerreiro extends Personagem
 
     public function defender()
     {
-        echo "$this->nome levantou o escudo de Ogum!";
+        echo "$this->nome levantou o escudo de Ogum! \n";
     }
 }
 
