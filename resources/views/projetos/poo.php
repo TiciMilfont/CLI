@@ -48,10 +48,33 @@ class Personagem {
 }
 
 $lucas = new Personagem("Lucas", 100, 10);
-$aurora = new Personagem("Aurora", 50, 5);
+$ana = new Personagem("Ana", 50, 5);
 $chloe = new Personagem("Chloe", 30, 3);
 
-?>
+//ENCAPSULAMENTO
+//Proteger informações para que não sejam alteradas de qualquer jeito.
+//HERANÇA
+//Criar uma classe nova aproveitando características de outra.
+//POLIMORFISMO
+//Permitir que objetos diferentes respondam à mesma ação de maneiras diferentes.
+//ABSTRAÇÃO
+//Mostrar o que é necessário e esconder detalhes complicados de funcionamento.
+
+
+$lucas->atacar(); // método próprio
+
+class Guerreiro extends Personagem {  // metodo herdado da classe personagem
+    public function defender() {
+        echo "$this->nome levantou o escudo!";
+    }
+}
+
+$guerreiro = new Guerreiro("Lucas", 100, 10);
+
+$guerreiro->atacar();   // método herdado
+$guerreiro->defender(); // método próprio
 
 
 ?>
+
+
