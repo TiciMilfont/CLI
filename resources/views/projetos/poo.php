@@ -2,7 +2,7 @@
 // programação orientada objeto
 
 
-
+/*
 // exemplo SEM POO
 $nome = "Lucas";
 $vida = 100;
@@ -15,21 +15,26 @@ function atacar($nome)
 atacar($nome);
 
 
-// exemplo COM POO
-//class Personagem {
-// public $nome;
-// public $vida = 100;
+ exemplo COM POO
+class Personagem {
+ public $nome;
+ public $vida = 100;
 
-// public function atacar() {
-//     echo "$this->nome realizou um ataque!";
-// }
-//}
+ public function atacar() {
+     echo "$this->nome realizou um ataque!";
+ }
+}
 
-//
+
 
 $personagem1 = new Personagem();
 $personagem1->nome = "Lucas";
 $personagem1->atacar();
+*/
+
+
+
+
 
 // exemplo COM POO, segunda maneira de usar
 class Personagem
@@ -60,7 +65,7 @@ class Personagem
             return;
         }
     }
-    
+
     public function atacar()
     {
         echo "$this->nome realizou um ataque!";
