@@ -1,0 +1,4 @@
+<?php
+// programação orientada objeto
+
+?>
