@@ -37,7 +37,7 @@ $personagem1->atacar();
 
 
 // exemplo COM POO, segunda maneira de usar
-class Personagem
+abstract class Personagem
 {
     public $nome;
     private $vida; // aqui o private protege a informação
@@ -64,9 +64,11 @@ class Personagem
             echo "a vida não pode ser negativa. /";
             return;
         }
+
+        abstract public function atacar(); 
     }
 
-    public function atacar()
+   public function atacar()
     {
         echo "$this->nome realizou um ataque!";
     }
@@ -99,10 +101,30 @@ class mago extends Personagem
     }
 }
 
-$guerreiro = new Guerreiro("Lucas", 100, 10);
-$lucas->setVida(50); // add 50 de vida para lucas pelo método setVida().
-$mago = new Mago("Aurora", 80, 20);
-$personagem = new Personagem("Lira", 50, 5);
+class Curandeiro extends Personagem {
+
+    public function atacar() {
+        echo "$this->nome atacou com uma faca!\n";
+    }
+
+    public function curar(Personagem $alvo, int $quantidade) {
+        $novaVida = $alvo->getVida() + $quantidade;
+        $alvo->setVida($novaVida);
+        echo "$this->nome curou {$alvo->nome} em $quantidade HP!\n";
+    }
+}
+
+$guerreiro = new Guerreiro("Lucas", 50, 10);
+$mago = new Mago("Aurora", 100, 5);
+$curandeiro = new Curandeiro("Chloe", 100, 3);
+
+$personagens = [$guerreiro, $mago, $curandeiro];
+
+foreach($personagens as $p) {
+    $p->atacar();
+}
+
+$curandeiro->curar($guerreiro, 50);
 
 $guerreiro->atacar();   // método herdado
 $guerreiro->defender(); // método próprio
