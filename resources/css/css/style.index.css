@@ -175,16 +175,18 @@ p, li, span, h3 {
 }
 
 .foto {
-    flex: 1;
+
+     /* para centralizar a imagem: */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    flex: 10;
     min-height: 200px;
     background-color: #e2e8f0;
     border: 2px solid #1a1a1a;
     border-radius: 12px;
 
-    /* para centralizar a imagem: */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
 }
 
 .sobre-texto {
