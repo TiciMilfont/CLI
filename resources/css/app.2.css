@@ -1,0 +1,53 @@
+/* Configuração geral do fundo da página */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f7b119; /* Laranja vibrante */
+    color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+/* Barra de Navegação Superior (Baseado no seu HTML) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fcfaf2; /* Fundo creme do seu tema */
+    border-bottom: 3px solid #1a1a1a; /* Borda grossa marcante */
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.navbar .menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    transition: all 0.1s ease;
+}
+
+/* Efeito Neo-Brutalista nos links do menu */
+.navbar .menu a:hover {
+    background-color: #1a1a1a;
+    color: #fcfaf2;
+    border-radius: 4px;
+}
