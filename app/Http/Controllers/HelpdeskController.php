@@ -5,9 +5,9 @@
 // {
 // 
  
-namespace app\Http\Controllers;
-use app\Http\Controllers\Controller;
- use app\Models\chamado;       
+namespace App\Http\Controllers;
+use App\Http\Controllers\Controller;
+ use App\Models\chamado;       
 
 
 class HelpdeskController extends Controller
