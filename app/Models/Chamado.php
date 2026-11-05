@@ -5,7 +5,7 @@ class Chamado{
     // READ  - ler os chamados
 public function lerChamados(){
 
-$arquivo = storage_path ('app?chamados.json');
+$arquivo = storage_path ('app/chamados.json');
 
 //verifica se o arquivo jason ja existe
 
