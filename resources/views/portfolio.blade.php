@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio Milfont</title>
-    <link rel="stylesheet" href="/resources/css/css/style.index.css">
+
+@vite (["/resources/css/css/style.index.css"])
+   <!-- em LARAVEL naõ usa LINK, o caminha deve ser escrito como está acima <link rel="stylesheet" href="/resources/css/css/style.index.css" -->
 </head>
 <body>
     <header>
@@ -50,7 +52,7 @@
                     Formada em Design e Mestre em História da Arte.
                 </p>
 
-                <a href="#projetos-curso" class="botao">
+                <a href="{{ route ('') }}" class="botao">
                     Ver meus projetos
                 </a>    
             </div>

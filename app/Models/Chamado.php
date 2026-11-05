@@ -1,9 +1,11 @@
 <?php 
+
+namespace app\Models;
 class Chamado{
     // READ  - ler os chamados
 public function lerChamados(){
 
-$arquivo = __DIR__ . "/../dados/chamados.json";
+$arquivo = storage_path ('app?chamados.json');
 
 //verifica se o arquivo jason ja existe
 
