@@ -1,6 +1,6 @@
 <?php 
 
-namespace app\Models;
+namespace App\Models;
 class Chamado{
     // READ  - ler os chamados
 public function lerChamados(){
