@@ -52,7 +52,7 @@
                     Formada em Design e Mestre em História da Arte.
                 </p>
 
-                <a href= "{{ route ('') }}" class="botao">
+                <a href= "" class="botao">
                     Ver meus projetos
                 </a>    
             </div>
