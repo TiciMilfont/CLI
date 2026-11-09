@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use app\Http\Controllers\HelpdeskController;
+use App\Http\Controllers\HelpdeskController;
 
 Route::get('/', function () {
     return view('portfolio');
@@ -12,5 +12,9 @@ Route::get('/helpdesk', [HelpdeskController :: class, 'index'] )
 
 Route::post('/helpdesk', [HelpdeskController :: class, 'salvar'] ) 
 ->name ('helpdesk.salvar');
+
+Route::match(['get', 'post'], '/notas', function () {
+    return view('projetos.notas');
+})->name('notas');
 
 
