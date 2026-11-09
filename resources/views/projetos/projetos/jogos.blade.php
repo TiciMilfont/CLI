@@ -64,11 +64,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Jogos</title>
-    <link rel="stylesheet" href="../resources/css/style_jogos.css">
+    <link rel="stylesheet" href="{{ asset('css/style_jogos.css') }}">
 </head>
 <body>
 
-<a href="../index.php" class="btn-voltar">← Voltar para o Menu</a> <!-- botão voltar -->
+<a href="{{ url('/') }}" class="btn-voltar">← Voltar para o Menu</a> <!-- botão voltar -->
 
 <!-- O CONTEÚDO PRINCIPAL  -->
 <main class="conteudo-principal">
